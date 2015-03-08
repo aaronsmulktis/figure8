@@ -1,0 +1,206 @@
+/*
+Theme Name: 	Figure8
+Theme URI: 		http://figure8recording.com
+Description: 	Music Cometh
+Version: 		0.1.0
+Author: 		Aaron Smulktis
+Author URI: 	http://thickmaterial.com.com
+Tags: 			starkers, naked, clean, basic
+*/
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Media queries 
+===========================
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+@import url(//fonts.googleapis.com/css?family=Capriola);
+@import url(//fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,100italic,300italic,400italic,500italic,700italic);
+@import url(//fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
+/*@import "css/reset.css";*/
+
+div,
+article,
+section,
+header,
+footer,
+nav,
+li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
+.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
+body 				{ background: url(images/concrete_seamless.png) repeat; color: white;}
+::-moz-selection 	{ background:#ff0; color:#333; }
+::selection 		{ background:#ff0; color:#333; }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Variables -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+.nopadding {padding: 0px !important;}
+.nomargin {padding: 0px !important;}
+.capped {text-transform: uppercase !important;letter-spacing: 5px;}
+.arvo {font-family: 'Arvo';}
+.transition {transition: 3s all easeinout !important; -webkit-transition: 3s all easeinout !important; -moz-transition: 3s all easeinout !important; -o-transition: 3s all easeinout !important;}
+
+body,
+input,
+textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+
+h1 {
+	font-size: 48px;
+	margin: 20px auto;
+}
+
+h2 {
+	font-family: 'Arvo', sans-serif;
+	font-size: 32px;
+	margin: 15px auto;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 10px auto;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Media queries (using a mobile-first approach) ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+body, html {
+	background: url(images/concrete_seamless.png) fixed repeat;
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+#global-container {
+	background: -moz-linear-gradient(-45deg,  rgba(4,139,211,0.1) 0%, rgba(125,150,3,0.2) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(4,139,211,0.1)), color-stop(100%,rgba(125,150,3,0.2))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(4,139,211,0.1) 0%,rgba(125,150,3,0.2) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(4,139,211,0.1) 0%,rgba(125,150,3,0.2) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(4,139,211,0.1) 0%,rgba(125,150,3,0.2) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(4,139,211,0.1) 0%,rgba(125,150,3,0.2) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a048bd3', endColorstr='#337d9603',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	height: 100%;
+	padding-top: 110px;
+}
+
+.contact-page, .about-page {
+	padding-top: 20px;
+}
+
+.navbar-header {
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+
+.navbar-default a.navbar-brand {
+	display: block;
+	float: none;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+	height: auto;
+	color: black;
+}
+
+.navbar-default a.navbar-brand:hover {
+	color: darkturquoise !important;
+}
+
+.navbar-brand h2 {
+	font-family: 'Capriola', sans-serif !important;
+	margin-bottom: 0;
+}
+
+.menu-main-container {
+	display: table;
+	margin: 0 auto;
+}
+
+.menu-main-container ul#menu-main li {
+	display: table-cell;
+  	padding-right: 40px;
+}
+
+.menu-main-container ul#menu-main li:last-child {
+	padding-right: 0px;
+}
+
+.menu-main-container ul#menu-main li a {font-family: 'Capriola'; text-transform: uppercase; color: black}
+.menu-main-container ul#menu-main li a:hover {color: darkturquoise !important; text-decoration: none;}
+.menu-main-container ul#menu-main li a:active {color: darkturquoise !important; text-decoration: none;}
+
+.menu-main-container ul#menu-main {
+	padding: 0px;
+}
+
+#content {
+	box-shadow: 1px 1px 25px rgba(0,0,0,0.3);
+	background: white;
+	padding: 40px 20px;
+	color: black;
+}
+
+.jumbotron {
+	padding: 0 !important;
+	margin: 0 auto;
+}
+
+.jumbotron .royalSlider {
+
+}
+
+#twine-toolbar-launcher {
+	display: none !important;
+}
+
+footer {
+
+}
+
+/* 400 and up */
+@media screen and (min-width:400px) {
+
+	body { /* Place your styles here for all widths greater than 400px */ 
+		text-align: center;
+	}
+
+}
+
+/* Retina Display */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+
+					{ /* Place your styles here for all 'Retina' screens */ }
+
+}
