@@ -59,7 +59,7 @@ body 				{ background: url(images/concrete_seamless.png) repeat; color: white;}
 
 .nopadding {padding: 0px !important;}
 .nomargin {padding: 0px !important;}
-.capped {text-transform: uppercase !important;letter-spacing: 5px;}
+.capped {text-transform: uppercase !important;letter-spacing: 6px;}
 .arvo {font-family: 'Arvo';}
 .transition {transition: 3s all easeinout !important; -webkit-transition: 3s all easeinout !important; -moz-transition: 3s all easeinout !important; -o-transition: 3s all easeinout !important;}
 
@@ -95,7 +95,6 @@ h3 {
 ---------------------------------------------------------------------------------------------------------- */
 
 body, html {
-	background: url(images/concrete_seamless.png) fixed repeat;
 	padding: 0;
 	margin: 0;
 	color: white;
@@ -103,13 +102,7 @@ body, html {
 }
 
 #global-container {
-	background: -moz-linear-gradient(-45deg,  rgba(4,139,211,0.1) 0%, rgba(125,150,3,0.2) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(4,139,211,0.1)), color-stop(100%,rgba(125,150,3,0.2))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg,  rgba(4,139,211,0.1) 0%,rgba(125,150,3,0.2) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg,  rgba(4,139,211,0.1) 0%,rgba(125,150,3,0.2) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg,  rgba(4,139,211,0.1) 0%,rgba(125,150,3,0.2) 100%); /* IE10+ */
-	background: linear-gradient(135deg,  rgba(4,139,211,0.1) 0%,rgba(125,150,3,0.2) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a048bd3', endColorstr='#337d9603',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: floralwhite;
 	height: 100%;
 	padding-top: 110px;
 }
@@ -118,16 +111,21 @@ body, html {
 	padding-top: 20px;
 }
 
+.navbar-default {
+	border: 0px;
+	color: black;
+}
+
 .navbar-header {
 	width: 100%;
 	text-align: center;
-	color: black;
+	color: white;
 }
 
 .navbar-default a.navbar-brand {
 	display: block;
 	float: none;
-	margin: 0 auto;
+	margin: 0 auto !important;
 	width: 100%;
 	padding: 0;
 	height: auto;
@@ -142,6 +140,35 @@ body, html {
 	font-family: 'Capriola', sans-serif !important;
 	margin-bottom: 0;
 }
+
+.navbar-default p.description {
+	margin-left: 5px;	
+	color: black;
+}
+
+.menu-main-menu-container {
+	display: table;
+	margin: 0 auto;
+}
+
+.menu-main-menu-container ul#menu-main-menu li {
+	display: table-cell;
+  	padding-right: 40px;
+}
+
+.menu-main-menu-container ul#menu-main-menu li:last-child {
+	padding-right: 0px;
+}
+
+.menu-main-menu-container ul#menu-main-menu li a {font-family: 'Capriola'; text-transform: uppercase; color: black}
+.menu-main-menu-container ul#menu-main-menu li a:hover {color: darkturquoise !important; text-decoration: none;}
+.menu-main-menu-container ul#menu-main-menu li a:active {color: darkturquoise !important; text-decoration: none;}
+
+.menu-main-menu-container ul#menu-main-menu {
+	padding: 0px;
+}
+
+/* LOCAL */
 
 .menu-main-container {
 	display: table;
@@ -164,6 +191,8 @@ body, html {
 .menu-main-container ul#menu-main {
 	padding: 0px;
 }
+
+/* END LOCAL MENU */
 
 #content {
 	box-shadow: 1px 1px 25px rgba(0,0,0,0.3);

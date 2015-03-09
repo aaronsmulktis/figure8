@@ -79,8 +79,8 @@
 		wp_register_style( 'royalsliderCSS', plugins_url().'/new-royalslider/lib/royalslider/royalslider.css', '', '', 'screen' );
         wp_enqueue_style( 'royalsliderCSS' );
 
-        wp_register_style( 'royalsliderThemeCSS', plugins_url().'/new-royalslider/lib/royalslider/skins/minimal-white/rs-minimal-white.css', '', '', 'screen' );
-        wp_enqueue_style( 'royalsliderThemeCSS' );
+        wp_register_style( 'figure8slider', get_template_directory_uri().'/figure8slider/figure8slider.css', '', '', 'screen' );
+        wp_enqueue_style( 'figure8slider' );
 
 		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
 		wp_enqueue_script( 'site' );
@@ -130,3 +130,13 @@
 
 	// Hide the Admin Bar
 	add_filter('show_admin_bar', '__return_false');
+
+	// CUSTOME SLIDER THEME
+	add_filter('new_royalslider_skins', 'new_royalslider_add_custom_skin', 10, 2);
+	function new_royalslider_add_custom_skin($skins) {
+	      $skins['figure8slider'] = array(
+	           'label' => 'Figure8 Custom Slider',
+	           'path' => get_stylesheet_directory_uri() . '/figure8slider/figure8slider.css'  // get_stylesheet_directory_uri returns path to your theme folder
+	      );
+	      return $skins;
+	}
