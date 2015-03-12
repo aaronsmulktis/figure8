@@ -79,8 +79,8 @@
 		wp_register_style( 'royalsliderCSS', plugins_url().'/new-royalslider/lib/royalslider/royalslider.css', '', '', 'screen' );
         wp_enqueue_style( 'royalsliderCSS' );
 
-        wp_register_style( 'figure8slider', get_template_directory_uri().'/figure8slider/figure8slider.css', '', '', 'screen' );
-        wp_enqueue_style( 'figure8slider' );
+        wp_register_style( 'royalsliderSkin', get_template_directory_uri().'/rs-figure8-skin/rs-figure8.css', '', '', 'screen' );
+        wp_enqueue_style( 'royalsliderSkin' );
 
 		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
 		wp_enqueue_script( 'site' );
@@ -134,9 +134,9 @@
 	// CUSTOME SLIDER THEME
 	add_filter('new_royalslider_skins', 'new_royalslider_add_custom_skin', 10, 2);
 	function new_royalslider_add_custom_skin($skins) {
-	      $skins['figure8slider'] = array(
-	           'label' => 'Figure8 Custom Slider',
-	           'path' => get_stylesheet_directory_uri() . '/figure8slider/figure8slider.css'  // get_stylesheet_directory_uri returns path to your theme folder
+	      $skins['rsFigure8'] = array(
+	           'label' => 'Figure8 Slider Skin',
+	           'path' => get_stylesheet_directory_uri() . '/rs-figure8-skin/rs-figure8.css'  // get_stylesheet_directory_uri returns path to your theme folder
 	      );
 	      return $skins;
 	}
