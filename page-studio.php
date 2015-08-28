@@ -16,21 +16,47 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="studio-page container">
-	<div class="row">
-		<div class="container-fluid">
-			<div class="col-sm-10 col-sm-offset-1 nopadding">
-				<div class="jumbotron">
-					<?php echo do_shortcode('[new_royalslider id="1"]'); ?>
-				</div>
-			</div>
+<div class="jumbotron">
+	<div class="container-fluid">
+		<div id="editable-jumbotron">
+			<?php if(get_field('jumbotron')) {
+				echo get_field('jumbotron');
+			} ?>
 		</div>
+		<div id="big-logo">
+			<?php if(get_field('big_logo')) {
+				echo get_field('big_logo');
+			} ?>
+		</div>
+		<div id="intro-text">
+			<?php if(get_field('intro_text')) {
+				echo get_field('intro_text');
+			} ?>
+		</div>
+	</div>
+</div>
+
+<div class="studio-page container-fluid">
+	<div class="row">
 		<div id="content" class="col-sm-10 col-sm-offset-1">
 
-			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<?php the_content(); ?>
-			<?php endwhile; ?>
-
+			<ul class="studio-rooms">
+				<?php $postslist = get_posts('numberposts=4&order=DESC&orderby=date'); foreach ($postslist as $post) : setup_postdata($post); ?>
+				<li class="entry container-fluid">
+					<div class="row-fluid">
+						<a class="entry-link" href="<?php the_permalink(); ?>">
+							<div class="col-sm-8">
+								<?php echo get_the_post_thumbnail( $page->ID, 'large' ); ?>
+							</div>
+							<div class="col-sm-4">
+								<h3><?php the_title(); ?></h3>
+								<div class="excerpt"><?php the_excerpt(); ?></div>
+							</div>
+						</a>
+					</div>
+				</li>
+			<?php endforeach; ?>
+			</ul>
 		</div>
 	</div>
 </div>
