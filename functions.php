@@ -24,7 +24,7 @@
 	Uncomment register_nav_menus to enable a single menu with the title of "Primary Navigation" in your theme
 	
 	======================================================================================================================== */
-
+	
 	add_theme_support('post-thumbnails');
 	
 	// register_nav_menus(array('primary' => 'Primary Navigation'));
@@ -82,6 +82,9 @@
         wp_register_style( 'royalsliderSkin', get_template_directory_uri().'/rs-figure8-skin/rs-figure8.css', '', '', 'screen' );
         wp_enqueue_style( 'royalsliderSkin' );
 
+		wp_register_script( 'smoothScroll', get_template_directory_uri().'/js/smoothScroll.js', array( 'jquery' ) );
+		wp_enqueue_script( 'smoothScroll' );
+		
 		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
 		wp_enqueue_script( 'site' );
 
@@ -140,3 +143,18 @@
 	      );
 	      return $skins;
 	}
+	
+	// Add Widgets
+	function fig8_widgets_init() {
+
+		register_sidebar( array(
+			'name'          => 'Personnel',
+			'id'            => 'personnel',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="rounded">',
+			'after_title'   => '</h2>',
+		) );
+	
+	}
+	add_action( 'widgets_init', 'fig8_widgets_init' );

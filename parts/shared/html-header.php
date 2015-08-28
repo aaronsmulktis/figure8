@@ -13,6 +13,18 @@
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
 		<?php wp_head(); ?>
 
+		<script type="text/javascript">
+			jQuery(document).ready(function ($) {
+				$(window).scroll(function() {
+				  if ($(document).scrollTop() > 250) {
+				    $('navbar-brand').addClass('shower');
+				  } else {
+				    $('navbar-brand').removeClass('shower');
+				  }
+				});
+			});
+		</script>
+
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="global-container">

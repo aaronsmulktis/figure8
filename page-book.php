@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Studio
+ * Template Name: Book
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -16,15 +16,8 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="studio-page container">
+<div class="container contact-page">
 	<div class="row">
-		<div class="container-fluid">
-			<div class="col-sm-10 col-sm-offset-1 nopadding">
-				<div class="jumbotron">
-					<?php echo do_shortcode('[new_royalslider id="1"]'); ?>
-				</div>
-			</div>
-		</div>
 		<div id="content" class="col-sm-10 col-sm-offset-1">
 
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

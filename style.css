@@ -22,9 +22,11 @@ CONTENTS:
 01 Sensible defaults ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
-@import url(//fonts.googleapis.com/css?family=Capriola);
+@import url(//fonts.googleapis.com/css?family=Open+Sansa);
 @import url(//fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,100italic,300italic,400italic,500italic,700italic);
 @import url(//fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
+
+@import url(//fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
 /*@import "css/reset.css";*/
 
 div,
@@ -35,7 +37,7 @@ footer,
 nav,
 li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
 .group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
-body 				{ background: url(images/concrete_seamless.png) repeat; color: white;}
+/*body 				{ background: url(images/concrete_seamless.png) repeat; color: white;}*/
 ::-moz-selection 	{ background:#ff0; color:#333; }
 ::selection 		{ background:#ff0; color:#333; }
 
@@ -60,7 +62,8 @@ body 				{ background: url(images/concrete_seamless.png) repeat; color: white;}
 .nopadding {padding: 0px !important;}
 .nomargin {padding: 0px !important;}
 .capped {text-transform: uppercase !important;letter-spacing: 6px;}
-.arvo {font-family: 'Arvo';}
+.arvo {font-family: 'Karla';}
+.open {font-family: 'Karla', sans-serif;}
 .transition {transition: 3s all easeinout !important; -webkit-transition: 3s all easeinout !important; -moz-transition: 3s all easeinout !important; -o-transition: 3s all easeinout !important;}
 
 body,
@@ -80,7 +83,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Arvo', sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-size: 32px;
 	margin: 15px auto;
 }
@@ -90,6 +93,31 @@ h3 {
 	margin: 10px auto;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
+hr {
+	border-top: 2px dotted pink;
+    margin: 0;
+    padding: 0;
+}
+
+vr {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 50px;
+  border: 0;
+  border-left: 1px solid #cccccc;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+ul {list-style-type: none;}
+
+li {margin: 10px; padding: 10px;}
+
 /* ---------------------------------------------------------------------------------------------------------- 
 03 Media queries (using a mobile-first approach) ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
@@ -97,14 +125,12 @@ h3 {
 body, html {
 	padding: 0;
 	margin: 0;
-	color: white;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Karla', sans-serif;
 }
 
 #global-container {
-	background: floralwhite;
 	height: 100%;
-	padding-top: 110px;
+/* 	padding-top: 50px; */
 }
 
 .contact-page, .about-page {
@@ -122,7 +148,29 @@ body, html {
 	color: white;
 }
 
+.navbar-default {
+	background: white;
+	box-shadow: none;
+	border-bottom: 1px solid hotpink;
+}
+
 .navbar-default a.navbar-brand {
+	position: relative;
+	background: url(images/figure-8-logo.svg) no-repeat;
+	background-size: 117px 60px;
+	width: 117px;
+	height: 60px;
+	z-index: 10;
+	left:50%;
+	margin-left: -58px;
+	display: none;
+}
+
+.shower {
+	display: block !important;
+}
+
+/*.navbar-default a.navbar-brand {
 	display: block;
 	float: none;
 	margin: 0 auto !important;
@@ -130,14 +178,14 @@ body, html {
 	padding: 0;
 	height: auto;
 	color: black;
-}
+}*/
 
 .navbar-default a.navbar-brand:hover {
 	color: darkturquoise !important;
 }
 
 .navbar-brand h2 {
-	font-family: 'Capriola', sans-serif !important;
+	font-family: 'Karla', sans-serif !important;
 	margin-bottom: 0;
 }
 
@@ -160,12 +208,13 @@ body, html {
 	padding-right: 0px;
 }
 
-.menu-main-menu-container ul#menu-main-menu li a {font-family: 'Capriola'; text-transform: uppercase; color: black}
+.menu-main-menu-container ul#menu-main-menu li a {font-family: 'Karla'; text-transform: uppercase; color: black}
 .menu-main-menu-container ul#menu-main-menu li a:hover {color: darkturquoise !important; text-decoration: none;}
 .menu-main-menu-container ul#menu-main-menu li a:active {color: darkturquoise !important; text-decoration: none;}
 
-.menu-main-menu-container ul#menu-main-menu {
+.menu-main-menu-container ul#menu-main-menu, .menu-main-container ul#menu-main {
 	padding: 0px;
+	margin-top: 15px;
 }
 
 /* LOCAL */
@@ -184,7 +233,7 @@ body, html {
 	padding-right: 0px;
 }
 
-.menu-main-container ul#menu-main li a {font-family: 'Capriola'; text-transform: uppercase; color: black}
+.menu-main-container ul#menu-main li a {font-family: 'Karla'; text-transform: uppercase; color: black}
 .menu-main-container ul#menu-main li a:hover {color: darkturquoise !important; text-decoration: none;}
 .menu-main-container ul#menu-main li a:active {color: darkturquoise !important; text-decoration: none;}
 
@@ -194,36 +243,143 @@ body, html {
 
 /* END LOCAL MENU */
 
+.jumbotron {
+	padding: 0;
+	margin: 0;
+	color: white;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover !important;
+	background-position: center center;
+}
+
+.jumbotron .container-fluid {
+	padding: 0;
+	margin: 0;
+}
+
+/*
+#big-brand {
+	z-index: 1;
+}
+*/
+
+#big-logo {
+	position: fixed;
+	display: table-cell;
+	top: 30%;
+	width: 300px;
+	height: 120px;
+	left:50%;
+	z-index: 1;
+	margin-left: -150px;
+	/*box-shadow: 0px 0px 100px rgba(0,0,0,0.5);*/
+	pointer-events: none;
+}
+
+#big-logo img {
+	width: 100%;
+}
+
+#intro-text {
+	position: fixed;
+	display: table-cell;
+	top: 60%;
+	width: 500px;
+	height: 200px;
+	z-index: 1;
+	left:50%;
+	margin-left: -250px;
+	/*box-shadow: 0px 0px 100px rgba(0,0,0,0.5);*/
+	pointer-events: none;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 #content {
-	box-shadow: 1px 1px 25px rgba(0,0,0,0.3);
+	/*box-shadow: 1px 1px 25px rgba(0,0,0,0.3);*/
 	background: white;
-	padding: 40px 20px;
+	padding: 0px;
+	z-index: 9;
+	position: relative;
 	color: black;
 }
 
-.jumbotron {
-	padding: 0 !important;
-	margin: 0 auto;
+.room {min-height: 100vh;padding: 3.3% 0;}
+
+#upstairs {background: aliceblue}
+#downstairs {background: white}
+#gear {background: aliceblue}
+#rates {background: white}
+#clients {background: aliceblue}
+#about {background: white}
+
+
+/* #gear  */
+
+div.csColumn {
+	text-align: left !important;
 }
 
-.jumbotron .royalSlider {
-
+.col-1 {
+	text-align: left;
+	float: left;
+	position: relative;
 }
 
-#twine-toolbar-launcher {
-	display: none !important;
+.col-2  {
+	text-align: left;
+	position: relative;
+}
+
+ul.studio-rooms {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.studio-rooms li:nth-child(odd) {
+	text-align: left;
+}
+
+ul.studio-rooms li:nth-child(even) {
+	text-align: right;
+}
+
+ul.studio-rooms li:nth-child(even) .col-sm-8 {
+	float: right !important;
+}
+
+.entry {
+	margin: 30px auto;
+}
+
+a.entry-link {
+	display: block;
 }
 
 footer {
-
+	padding-bottom: 15px;
 }
 
 /* 400 and up */
-@media screen and (min-width:400px) {
+@media screen and (min-width: 400px) {
 
 	body { /* Place your styles here for all widths greater than 400px */ 
 		text-align: center;
 	}
+	div.csColumn {
+		text-align: left !important;
+	}
+}
+
+/* 400 and up */
+@media screen and (min-width: 767px) {
 
 }
 
