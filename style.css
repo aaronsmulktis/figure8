@@ -331,22 +331,33 @@ body, html {
 
 .room {min-height: 100vh; padding: 6.6% 0; text-align: center;}
 
-.center-block {
+#upstairs {background: aliceblue}
+#upstairs .center-block {
+	color: white;
 	position: fixed;
 	display: table-cell;
 	top: 30%;
 	width: 300px;
 	height: 120px;
 	left:50%;
+	z-index: 10;
 	margin-left: -150px;
 	/*box-shadow: 0px 0px 100px rgba(0,0,0,0.5);*/
 }
 
-#upstairs {background: aliceblue}
-#upstairs .center-block {z-index: 10}
-
 #downstairs {background: white}
-#downstairs .center-block {z-index: 20}
+#downstairs .center-block {
+	color: white;
+	position: fixed;
+	display: table-cell;
+	top: 30%;
+	width: 300px;
+	height: 120px;
+	left:50%;
+	z-index: 20;
+	margin-left: -150px;
+	/*box-shadow: 0px 0px 100px rgba(0,0,0,0.5);*/
+}
 
 #gear {background: aliceblue}
 #rates {background: white}
