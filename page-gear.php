@@ -24,16 +24,17 @@
 			<?php the_content(); ?>
 			<?php endwhile; ?>
 
+<!--
 			<div class="table-responsive">
 				<table class="table">
-					<!-- On rows -->
+
 					<tr class="active">...</tr>
 					<tr class="success">...</tr>
 					<tr class="warning">...</tr>
 					<tr class="danger">...</tr>
 					<tr class="info">...</tr>
 
-					<!-- On cells (`td` or `th`) -->
+
 					<tr>
 					  <td class="active">...</td>
 					  <td class="success">...</td>
@@ -43,6 +44,7 @@
 					</tr>
 				</table>
 			</div>
+-->
 
 		</div>
 	</div>

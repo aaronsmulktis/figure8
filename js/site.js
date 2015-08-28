@@ -1,7 +1,12 @@
 
 	jQuery(document).ready(function($) {
 
-		// Your JavaScript goes here
+		$('.menu-item a').smoothScroll({
+			speed: 666,
+			offset: -50,
+			easing: 'swing',
+			preventDefault: true
+		});
 
 	});
 
