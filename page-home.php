@@ -20,11 +20,11 @@
 	<div id="big-brand" class="container-fluid">
 		<div id="big-logo">
 			<img src="<?php the_field('big_logo'); ?>" />
-		</div>
-		<div id="intro-text">
-			<?php if(get_field('intro_text')) {
-				echo get_field('intro_text');
-			} ?>
+			<p>
+				<?php if(get_field('intro_text')) {
+					echo get_field('intro_text');
+				} ?>
+			</p>
 		</div>
 	</div>
 </div>

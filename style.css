@@ -288,10 +288,9 @@ body, html {
 	width: 100%;
 }
 
-#intro-text {
-	position: fixed;
+#big-logo p {
 	display: table-cell;
-	top: 60%;
+	text-align: center;
 	width: 500px;
 	height: 200px;
 	z-index: 1;
@@ -359,7 +358,7 @@ body, html {
 	/*box-shadow: 0px 0px 100px rgba(0,0,0,0.5);*/
 	pointer-events: none;
 =======
-.room {min-height: 100vh;padding: 3.3% 0;}
+.room {min-height: 100vh; padding: 6.6% 0;text-align: center;}
 
 #upstairs {background: aliceblue}
 #downstairs {background: white}
