@@ -357,7 +357,8 @@ body, html {
 	margin-left: -117px;
 	/*box-shadow: 0px 0px 100px rgba(0,0,0,0.5);*/
 	pointer-events: none;
-=======
+}
+
 .room {min-height: 100vh; padding: 6.6% 0;text-align: center;}
 
 #upstairs {background: aliceblue}
