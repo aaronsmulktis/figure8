@@ -1,7 +1,7 @@
 
 	jQuery(document).ready(function($) {
 
-		$('.menu-item a').smoothScroll({
+		$('.navbar-nav>li>a').smoothScroll({
 			speed: 666,
 			offset: -50,
 			easing: 'swing',

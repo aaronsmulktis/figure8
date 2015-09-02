@@ -19,7 +19,7 @@
 				  if ($(document).scrollTop() > 250) {
 				    $('navbar-brand').addClass('shower');
 				  } else {
-				    $('navbar-brand').removeClass('shower'));
+				    $('navbar-brand').removeClass('shower');
 				  }
 				});
 			});
