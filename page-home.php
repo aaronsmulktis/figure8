@@ -17,7 +17,7 @@
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <div class="jumbotron" style="background-image: url(<?php the_field('hero_image'); ?>)">
-	<div id="big-brand" class="container-fluid">
+	<div id="big-brand" class="center-block">
 		<div id="big-logo">
 			<img src="<?php the_field('big_logo'); ?>" />
 			<p>
@@ -30,7 +30,7 @@
 </div>
 
 <div id="content">
-	<div id="upstairs" class="room container-fluid">
+	<div id="upstairs" class="room scroll container-fluid">
 		
 <!-- 		<div class="col-xs-12" style="height:10vh;"></div> -->
 		<div class="center-info">
@@ -108,7 +108,7 @@
 	<hr>
 	<div id="about">
 		<div id="about-acf"  class="room container">
-			<div class="col-md-6 col-md-offset-2">
+			<div class="col-md-8 col-md-offset-2">
 				<?php the_field('about'); ?>
 				
 				<?php if ( is_active_sidebar( 'personnel' ) ) : ?>

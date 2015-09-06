@@ -84,6 +84,9 @@
 
 		wp_register_script( 'smoothScroll', get_template_directory_uri().'/js/smoothScroll.js', array( 'jquery' ) );
 		wp_enqueue_script( 'smoothScroll' );
+
+		wp_register_script( 'parallax', plugins_url().'/js/parallax.js', array( 'jquery' ) );
+		wp_enqueue_script( 'parallax' );
 		
 		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
 		wp_enqueue_script( 'site' );

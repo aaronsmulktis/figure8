@@ -271,8 +271,27 @@ body, html {
 }
 */
 
+html.touch .center-block {
+  background-attachment: scroll !important;
+}
+
+.center-block {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: transparent;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.room.scroll .center-block {
+  background-attachment: scroll;
+}
+
 #big-logo {
-	position: fixed;
 	display: table-cell;
 	top: 30%;
 	width: 300px;
