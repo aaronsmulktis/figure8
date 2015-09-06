@@ -17,7 +17,7 @@
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <div class="jumbotron" style="background-image: url(<?php the_field('hero_image'); ?>)">
-	<section id="big-brand" class="center-block">
+	<div id="big-brand" class="center-block">
 		<div id="big-logo">
 			<img src="<?php the_field('big_logo'); ?>" />
 			<p>
@@ -26,38 +26,25 @@
 				} ?>
 			</p>
 		</div>
-	</section>
-	<section class="center-info">
-		<div id="upstairs-title">
-			<h2><?php if(get_field('upstairs')) {
-				echo get_field('upstairs');
-			} ?></h2>
-		</div>
-		<div id="upstairs-info">
-			<?php if(get_field('upstairs_info')) {
-				echo get_field('upstairs_info');
-			} ?>
-		</div>
-	</section>
-	<section class="center-info scroll">
-		<div id="downstairs-title">
-			<h2><?php if(get_field('downstairs')) {
-				echo get_field('downstairs');
-			} ?></h2>
-		</div>
-		<div id="downstairs-info">
-			<?php if(get_field('downstairs_info')) {
-				echo get_field('downstairs_info');
-			} ?>
-		</div>
-	</section>
+	</div>
 </div>
 
 <div id="content">
 	<div id="upstairs" class="room scroll container-fluid">
 		
 <!-- 		<div class="col-xs-12" style="height:10vh;"></div> -->
-		
+		<div class="center-info">
+			<div id="upstairs-title">
+				<h2><?php if(get_field('upstairs')) {
+					echo get_field('upstairs');
+				} ?></h2>
+			</div>
+			<div id="upstairs-info">
+				<?php if(get_field('upstairs_info')) {
+					echo get_field('upstairs_info');
+				} ?>
+			</div>
+		</div>
 <!-- 		<div class="col-xs-12" style="height:5vh;"></div> -->
 		<div id="upstairs-media">
 			<?php 
@@ -75,7 +62,18 @@
 	<div id="downstairs" class="room container-fluid">
 		
 <!-- 		<div class="col-xs-12" style="height:10vh;"></div> -->
-		
+		<div class="center-info">
+			<div id="downstairs-title">
+				<h2><?php if(get_field('downstairs')) {
+					echo get_field('downstairs');
+				} ?></h2>
+			</div>
+			<div id="downstairs-info">
+				<?php if(get_field('downstairs_info')) {
+					echo get_field('downstairs_info');
+				} ?>
+			</div>
+		</div>
 <!-- 		<div class="col-xs-12" style="height:5vh;"></div> -->
 		<div id="downstairs-media">
 			<?php 
