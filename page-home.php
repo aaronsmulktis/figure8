@@ -118,7 +118,7 @@
 					<!-- #primary-sidebar -->
 				<?php endif; ?>
 				
-				<ul class="container">
+				<ul class="container-fluid">
 					<?php
 					
 					
@@ -127,10 +127,10 @@
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 						<li class="row">
-							<div class="col-sm-3">
+							<div class="col-sm-4">
 								<?php the_post_thumbnail(); ?>
 							</div>
-							<div class="col-sm-6 text-left">
+							<div class="col-sm-5 text-left">
 								<h3><?php the_title(); ?></h3>
 								<p><?php the_excerpt(); ?></p>
 								<ul class="list-inline">
