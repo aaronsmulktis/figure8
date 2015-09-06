@@ -246,6 +246,11 @@ body, html {
 	padding: 0px;
 }
 
+.nav>li {
+	padding: 0;
+	margin: 0;
+}
+
 /* END LOCAL MENU */
 
 .jumbotron {
@@ -292,6 +297,7 @@ html.touch .center-block {
 }
 
 #big-logo {
+	position: absolute;
 	display: table-cell;
 	top: 30%;
 	width: 300px;

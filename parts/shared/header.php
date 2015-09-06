@@ -27,7 +27,7 @@
 						<li><a href="#clients">Clients</a></li>
 						<li><a href="#about">About</a></li>
 					</ul>
-					<form class="navbar-form navbar-left" role="search">
+					<form class="navbar-form navbar-left pull-right" role="search">
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Keep In Touch">
 						</div>

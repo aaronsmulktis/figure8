@@ -1,3 +1,12 @@
+function setActive() {
+	if ($(this).hasClass('active')) {
+		return;
+	} else {
+		$('.navbar-nav>li.active').removeClass('active');
+		$(this).addClass('active');
+	}
+}
+
 
 	jQuery(document).ready(function($) {
 
@@ -6,6 +15,11 @@
 			offset: -50,
 			easing: 'swing',
 			preventDefault: true
+		});
+
+		// Set Active Class
+		$('.navbar-nav>li>a').click('', function() {
+			setActive();
 		});
 
 		var $window = $(window),
