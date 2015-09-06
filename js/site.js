@@ -127,5 +127,13 @@ function setActive() {
 
 	    })();
 
+	    $window.load(function() {
+	        $('[data-deferclass]').each(function() {
+	            var $this = $(this),
+	                className = $this.data('deferclass');
+	            $this.addClass(className);
+	        });
+	    });
+
 	});
 

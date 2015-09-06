@@ -62,7 +62,7 @@
 	<div id="downstairs" class="room container-fluid">
 		
 <!-- 		<div class="col-xs-12" style="height:10vh;"></div> -->
-		<div class="center-info">
+		<div class="center-info scroll">
 			<div id="downstairs-title">
 				<h2><?php if(get_field('downstairs')) {
 					echo get_field('downstairs');
