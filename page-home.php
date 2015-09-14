@@ -117,13 +117,13 @@
 					<?php
 					
 					
-					$args = array( 'posts_per_page' => 15, 'category_name' => 'people' );
+					$args = array( 'posts_per_page' => 15, 'category_name' => 'people', 'order' => 'DESC' );
 					
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 						<li class="row">
 							<div class="col-sm-4">
-								<?php the_post_thumbnail(); ?>
+								<?php the_post_thumbnail('medium',''); ?>
 							</div>
 							<div class="col-sm-5 text-left">
 								<h3><?php the_title(); ?></h3>
