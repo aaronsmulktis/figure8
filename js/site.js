@@ -29,11 +29,11 @@ jQuery(document).ready(function($) {
 
 	function onScroll(event){
 	    var scrollPos = $(document).scrollTop();
-	    $('#main-nav a').each(function () {
+	    $('.navbar-nav>li>a').each(function () {
 	        var currLink = $(this);
 	        var refElement = $(currLink.attr("href"));
 	        if (refElement.position().top-70 <= scrollPos && refElement.position().top-50 + refElement.height() > scrollPos) {
-	           $('#main-nav ul li a').removeClass("active");
+	           $('.navbar-nav>li>a').removeClass("active");
 	            currLink.addClass("active");
 	        }
 	        else{
