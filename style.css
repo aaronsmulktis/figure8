@@ -142,6 +142,12 @@ body, html {
 	padding-top: 20px;
 }
 
+.navbar-default.shift {
+	margin-left: -50px;
+	transition: 1s all easeinout;
+	-webkit-transition: 1s all easeinout;
+}
+
 .navbar-default {
 	border: 0px;
 	color: black;
@@ -265,6 +271,7 @@ body, html {
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
 	background: transparent;
+	box-shadow: 0;
 }
 
 /* END LOCAL MENU */
