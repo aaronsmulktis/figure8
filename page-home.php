@@ -47,12 +47,9 @@
 			</div>			
 		</div>
 		
-<!-- 		<div class="col-xs-12" style="height:10vh;"></div> -->
-
-<!-- 		<div class="col-xs-12" style="height:5vh;"></div> -->
-		
 	</div>
-	
+
+	<!-- UPSTAIRS IMG GALLERY -->
 	<div id="upstairs-gallery">
 		<?php the_field('upstairs_gallery'); ?>
 	</div>
@@ -60,26 +57,19 @@
 	<hr>
 	<div id="downstairs" class="room container-fluid">
 		
-<!-- 		<div class="col-xs-12" style="height:10vh;"></div> -->
-		<div class="center-info">
-			<div id="downstairs-title">
-				<h2><?php if(get_field('downstairs')) {
-					echo get_field('downstairs');
-				} ?></h2>
+		<div class="center-block" style="background-image: url(<?php the_field('downstairs_media'); ?>)">
+			<div class="center-info">
+				<div id="downstairs-title">
+					<h2><?php if(get_field('downstairs')) {
+						echo get_field('downstairs');
+					} ?></h2>
+				</div>
+				<div id="downstairs-info">
+					<?php if(get_field('downstairs_info')) {
+						echo get_field('downstairs_info');
+					} ?>
+				</div>
 			</div>
-			<div id="downstairs-info">
-				<?php if(get_field('downstairs_info')) {
-					echo get_field('downstairs_info');
-				} ?>
-			</div>
-		</div>
-<!-- 		<div class="col-xs-12" style="height:5vh;"></div> -->
-		<div id="downstairs-media">
-			<?php 
-			$image = get_field('downstairs_media');
-			if( !empty($image) ): ?>
-				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-			<?php endif; ?>
 		</div>
 	</div>
 	<hr>
