@@ -128,11 +128,11 @@
 							<div class="col-sm-5 text-left">
 								<h3><?php the_title(); ?></h3>
 								<p><?php the_excerpt(); ?></p>
-								<ul class="list-inline">
+								<!-- <ul class="list-inline">
 									<li><a href="<?php the_field('link1'); ?>"><i class="fa fa-globe fa-2x"></i></a></li>
 									<li><a href="<?php the_field('link2'); ?>"><i class="fa fa-globe fa-2x"></i></a></li>
 									<li><a href="<?php the_field('link3'); ?>"><i class="fa fa-globe fa-2x"></i></a></li>
-								</ul>
+								</ul> -->
 							</div>
 						</li>
 					<?php endforeach; 
