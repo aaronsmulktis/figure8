@@ -289,7 +289,7 @@ html.touch .center-block {
 	background-color: transparent;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover !important;
 	z-index: 1;
 }
 
