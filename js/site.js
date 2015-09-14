@@ -135,5 +135,22 @@ jQuery(document).ready(function($) {
         });
     });
 
+    function onScroll(event){
+	    var scrollPos = $(document).scrollTop();
+	    $('#main-nav a').each(function () {
+	        var currLink = $(this);
+	        var refElement = $(currLink.attr("href"));
+	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+	            $('#main-nav ul li a').removeClass("active"); //added to remove active class from all a elements
+	            currLink.addClass("active");
+	        }
+	        else{
+	            currLink.removeClass("active");
+	        }
+	    });
+	}
+
+	$('html, body').stop().animate({'scrollTop': $target.offset().top+2});
+
 });
 

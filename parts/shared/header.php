@@ -10,15 +10,9 @@
 						<a id="nav-button" href="#" class="hmbrgr"></a>
 					</div>
 					<a class="navbar-brand" href="<?php bloginfo('url'); ?>"></a>
-					<!-- <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><h2><?php bloginfo('title'); ?></h2></a> -->
-					<!-- <p class="description capped"><?php bloginfo( 'description' ); ?></p> -->
-<!--
-					<a class="navbar-brand" href="<?php bloginfo('url'); ?>"></a>
-					<a class="navbar-brand" href="<?php bloginfo('url'); ?>"><h2><?php bloginfo('title'); ?></h2></a>
-					<p class="description capped"><?php bloginfo( 'description' ); ?></p>
--->
+
 				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse" id="main-nav">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#upstairs">Upstairs</a></li>
 						<li><a href="#downstairs">Downstairs</a></li>
