@@ -354,7 +354,16 @@ html.touch .center-block {
 	height: 100vh;
 }
 
-.room {min-height: 100vh; padding: 6.6% 0; text-align: center;}
+.room {
+	position: relative;
+	min-height: 100vh;
+	padding: 6.6% 0;
+	text-align: center;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 #upstairs {background: aliceblue}
 #upstairs .center-block {z-index: 10}

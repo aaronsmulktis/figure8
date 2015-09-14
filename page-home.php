@@ -16,21 +16,22 @@
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
-<div class="jumbotron" style="background-image: url(<?php the_field('hero_image'); ?>)">
-	<div id="big-brand" class="center-block">
-		<div id="big-logo">
-			<img src="<?php the_field('big_logo'); ?>" />
-			<p>
-				<?php if(get_field('intro_text')) {
-					echo get_field('intro_text');
-				} ?>
-			</p>
+<div id="content">
+
+	<div id="hero" class="room container-fluid">
+		<div id="big-brand" class="center-block" style="background-image: url(<?php the_field('hero_image'); ?>)">
+			<div id="big-logo">
+				<img src="<?php the_field('big_logo'); ?>" />
+				<p>
+					<?php if(get_field('intro_text')) {
+						echo get_field('intro_text');
+					} ?>
+				</p>
+			</div>
 		</div>
 	</div>
-</div>
 
-<div id="content">
-	<div id="upstairs" class="room scroll container-fluid">
+	<div id="upstairs" class="room container-fluid">
 		
 <!-- 		<div class="col-xs-12" style="height:10vh;"></div> -->
 		<div class="center-info">
@@ -84,30 +85,30 @@
 		</div>
 	</div>
 	<hr>
-	<div id="gear">
-		<div id="gear-acf" class="room container">
+	<div id="gear" class="room">
+		<div id="gear-acf" class="container">
 			<div class="col-md-8 col-md-offset-2">
 				<?php the_field('gear'); ?>
 			</div>
 		</div>
 	</div>
 	<hr>
-	<div id="rates">
-		<div id="rates-acf" class="room container">
-			<?php the_field('rates'); ?>
+	<div id="rates" class="room">
+		<div id="rates-acf" class="container">
+			<div class="col-md-8 col-md-offset-2"><?php the_field('rates'); ?></div>
 		</div>
 	</div>
 	<hr>
-	<div id="clients">
-		<div id="clients-acf" class="room container">
+	<div id="clients" class="room">
+		<div id="clients-acf" class="container">
 			<div class="col-md-8 col-md-offset-2">
 				<?php the_field('clients'); ?>
 			</div>
 		</div>
 	</div>
 	<hr>
-	<div id="about">
-		<div id="about-acf"  class="room container">
+	<div id="about" class="room scroll">
+		<div id="about-acf"  class="container">
 			<div class="col-md-8 col-md-offset-2">
 				<?php the_field('about'); ?>
 				
