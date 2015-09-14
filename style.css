@@ -252,10 +252,6 @@ body, html {
 	margin: 0;
 }
 
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a.active {
-	background: lightgrey;
-}
-
 /* END LOCAL MENU */
 
 .jumbotron {
