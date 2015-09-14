@@ -369,6 +369,15 @@ html.touch .center-block {
 	box-sizing: border-box;
 }
 
+.center-info {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 50%;
+	margin-left: -150px;
+	padding: 15px;
+}
+
 #upstairs {background: aliceblue}
 #upstairs .center-block {z-index: 10}
 
