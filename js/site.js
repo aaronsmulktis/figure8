@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-	$(document).on('scroll', onScroll);
+	$(document).on("scroll", onScroll);
 
 	$(window).scroll(function () {
          $('.navbar-nav>li>a').each(function(){
@@ -21,9 +21,9 @@ jQuery(document).ready(function($) {
             menu = target;
 	    $target = $(target);
 	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 500, 'swing', function () {
+	        'scrollTop': $target.offset().top-50}, 500, 'swing', function () {
 	        window.location.hash = target;
+	        $(document).on("scroll", onScroll);
 	    });
 	});
 
