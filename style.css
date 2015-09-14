@@ -269,8 +269,9 @@ body, html {
 	margin-left: 10px;
 }
 
-#main-nav ul li.active:first-child {
+#main-nav ul li.active:first-child, .navbar-default .navbar-nav > .active > a {
 	background: transparent !important;
+	background-image: none;
 	box-shadow: 0 !important;
 }
 
