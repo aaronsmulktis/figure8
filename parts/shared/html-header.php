@@ -26,5 +26,5 @@
 		</script>
 
 	</head>
-	<body data-spy="scroll" data-target="#main-nav" <?php body_class(); ?>>
+	<body data-spy="scroll" data-target="#main-nav" data-offset="50" <?php body_class(); ?>>
 		<div id="global-container">
