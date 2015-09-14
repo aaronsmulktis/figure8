@@ -1,6 +1,6 @@
 <header>
 	<div class="container-fluid">
-		<nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav id="main-nav" class="navbar navbar-default navbar-fixed-top shift" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse">

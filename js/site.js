@@ -14,9 +14,9 @@ jQuery(document).ready(function($) {
 
 	$(window).scroll(function() {
 		if ($(document).scrollTop() > 50) {
-			$('.navbar-default').addClass('shift');
-		} else {
 			$('.navbar-default').removeClass('shift');
+		} else {
+			$('.navbar-default').addClass('shift');
 		}
 	});
 
