@@ -3,14 +3,14 @@ jQuery(document).ready(function($) {
 	$(document).on('scroll', onScroll());
 
 	$(window).scroll(function () {
-         $('#main-nav a').each(function(){
+         $('.navbar-nav>li>a').each(function(){
             $(this).removeClass('active');
         })
-		$('#main-nav a[href^="'+window.location.hash+'"]').addClass('active');	
+		$('.navbar-nav>li>a[href^="'+window.location.hash+'"]').addClass('active');	
     });
     
     //smoothscroll
-    $('#main-nav a[href^="#"]').on('click',function (e) {
+    $('.navbar-nav>li>a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
         $('a').each(function(){
             $(this).removeClass('active');
