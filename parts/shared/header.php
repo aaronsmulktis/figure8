@@ -14,7 +14,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="main-nav">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#upstairs">Upstairs</a></li>
+						<li><a href="#upstairs" class="active">Upstairs</a></li>
 						<li><a href="#downstairs">Downstairs</a></li>
 						<li><a href="#gear">Gear</a></li>
 						<li><a href="#rates">Rates</a></li>
