@@ -251,11 +251,11 @@ body, html {
 	margin: 0;
 }
 
-#main-nav ul li a:first-child span {
+#main-nav ul li:first-child span {
 	display: none;
 }
 
-#main-nav ul li a:first-child {
+#main-nav ul li:first-child {
 	background: url(images/icon.gif) no-repeat;
 	background-size: contain;
 }
