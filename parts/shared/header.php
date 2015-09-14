@@ -14,6 +14,7 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav" role="tablist">
+						<li><a href="#content"><span>((8))</span></a></li>
 						<li><a href="#upstairs">Upstairs</a></li>
 						<li><a href="#downstairs">Downstairs</a></li>
 						<li><a href="#gear">Gear</a></li>
