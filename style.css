@@ -199,7 +199,7 @@ body, html {
 	color: black;
 }
 
-.menu-main-menu-container {
+/*.menu-main-menu-container {
 	display: table;
 	margin: 0 auto;
 }
@@ -220,11 +220,11 @@ body, html {
 .menu-main-menu-container ul#menu-main-menu, .menu-main-container ul#menu-main {
 	padding: 0px;
 	margin-top: 15px;
-}
+}*/
 
 /* LOCAL */
 
-.menu-main-container {
+/*.menu-main-container {
 	display: table;
 	margin: 0 auto;
 }
@@ -249,6 +249,10 @@ body, html {
 .nav>li {
 	padding: 0;
 	margin: 0;
+}*/
+
+#main-nav ul li a.active {
+	background: lightgrey;
 }
 
 /* END LOCAL MENU */
