@@ -487,6 +487,19 @@ footer {
 	padding-bottom: 15px;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+	.navbar-default.shift {
+	    margin: 0;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {}
+
 /* 400 and up */
 @media screen and (min-width: 400px) {
 
@@ -496,11 +509,6 @@ footer {
 	div.csColumn {
 		text-align: left !important;
 	}
-}
-
-/* 400 and up */
-@media screen and (min-width: 767px) {
-
 }
 
 /* 400 and up */
