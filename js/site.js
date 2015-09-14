@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
 
 	function onScroll(event){
 	    var scrollPos = $(document).scrollTop();
-	    j$('#main-nav a').each(function () {
+	    $('#main-nav a').each(function () {
 	        var currLink = $(this);
 	        var refElement = $(currLink.attr("href"));
 	        if (refElement.position().top-70 <= scrollPos && refElement.position().top-50 + refElement.height() > scrollPos) {
