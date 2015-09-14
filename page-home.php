@@ -32,33 +32,31 @@
 	</div>
 
 	<div id="upstairs" class="room container-fluid">
+		<div class="center-block" style="background-image: url(<?php the_field('upstairs_media'); ?>)">
+			<div class="center-info">
+				<div id="upstairs-title">
+					<h2><?php if(get_field('upstairs')) {
+						echo get_field('upstairs');
+					} ?></h2>
+				</div>
+				<div id="upstairs-info">
+					<?php if(get_field('upstairs_info')) {
+						echo get_field('upstairs_info');
+					} ?>
+				</div>
+			</div>			
+		</div>
 		
 <!-- 		<div class="col-xs-12" style="height:10vh;"></div> -->
-		<div class="center-info">
-			<div id="upstairs-title">
-				<h2><?php if(get_field('upstairs')) {
-					echo get_field('upstairs');
-				} ?></h2>
-			</div>
-			<div id="upstairs-info">
-				<?php if(get_field('upstairs_info')) {
-					echo get_field('upstairs_info');
-				} ?>
-			</div>
-		</div>
+
 <!-- 		<div class="col-xs-12" style="height:5vh;"></div> -->
-		<div id="upstairs-media">
-			<?php 
-			$image = get_field('upstairs_media');
-			if( !empty($image) ): ?>
-				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-			<?php endif; ?>
-		</div>
-		<div id="upstairs-gallery">
-			<?php the_field('upstairs_gallery'); ?>
-		</div>
 		
 	</div>
+	
+	<div id="upstairs-gallery">
+		<?php the_field('upstairs_gallery'); ?>
+	</div>
+
 	<hr>
 	<div id="downstairs" class="room container-fluid">
 		
