@@ -82,9 +82,15 @@
 	</div>
 	<hr>
 	<div id="rates" class="room">
-		<div id="rates-acf" class="container">
-			<div class="col-md-8 col-md-offset-2"><?php the_field('rates'); ?></div>
+
+		<div class="center-block" style="background-image: url(<?php the_field('rates_media'); ?>)">
+			<div class="center-info">
+				<div id="rates-acf" class="container">
+					<div class="col-md-8 col-md-offset-2"><?php the_field('rates'); ?></div>
+				</div>
+			</div>
 		</div>
+
 	</div>
 	<hr>
 	<div id="clients" class="room">
