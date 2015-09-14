@@ -1,15 +1,52 @@
 jQuery(document).ready(function($) {
 
+	$(document).on('scroll', onScroll);
+
+	$(window).scroll(function () {
+         $('a').each(function(){
+            $(this).removeClass('active');
+        })
+		$('a[href^="'+window.location.hash+'"]').addClass('active');	
+    });
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+        $('a').each(function(){
+            $(this).removeClass('active');
+        })
+		$(this).addClass('active');	
+
+	    var target = this.hash,
+            menu = target;
+	    $target = $(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 500, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+	function onScroll(event){
+	    var scrollPos = $(document).scrollTop();
+	    j$('#main-nav a').each(function () {
+	        var currLink = $(this);
+	        var refElement = $(currLink.attr("href"));
+	        if (refElement.position().top-70 <= scrollPos && refElement.position().top-50 + refElement.height() > scrollPos) {
+	           $('#main-nav ul li a').removeClass("active");
+	            currLink.addClass("active");
+	        }
+	        else{
+	            currLink.removeClass("active");
+	        }
+	    });
+	}
+
 	$('.navbar-nav>li>a').smoothScroll({
 		speed: 666,
 		offset: -50,
 		easing: 'swing',
 		preventDefault: true
-	});
-
-	// Set Active Class
-	$('.navbar-nav>li>a').click('', function() {
-		setActive();
 	});
 
 	var $window = $(window),
@@ -124,21 +161,6 @@ jQuery(document).ready(function($) {
             $this.addClass(className);
         });
     });
-
-    function onScroll(event){
-	    var scrollPos = $(document).scrollTop();
-	    $('.navbar-default .navbar-nav>li>a').each(function () {
-	        var currLink = $(this);
-	        var refElement = $(currLink.attr('href'));
-	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-	            $('.navbar-default .navbar-nav>li>a').removeClass('active');
-	            currLink.addClass('active');
-	        }
-	        else{
-	            currLink.removeClass('active');
-	        }
-	    });
-	}
 
 	// $('html, body').stop().animate({'scrollTop': $target.offset().top+2});
 
