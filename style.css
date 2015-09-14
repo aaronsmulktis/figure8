@@ -370,6 +370,8 @@ html.touch .center-block {
 }
 
 .center-info {
+	width: 300px;
+	background: black;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
