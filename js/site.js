@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-	$(document).on('scroll', onScroll);
+	$(document).on('scroll', onScroll());
 
 	$(window).scroll(function () {
          $('a').each(function(){
