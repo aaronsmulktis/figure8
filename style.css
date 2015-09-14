@@ -258,6 +258,9 @@ body, html {
 #main-nav ul li:first-child {
 	background: url(images/icon.gif) no-repeat;
 	background-size: contain;
+	background-position: center;
+	padding: 10px 5px;
+	margin-left: 10px;
 }
 
 /* END LOCAL MENU */
