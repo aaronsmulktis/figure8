@@ -1,46 +1,6 @@
 jQuery(document).ready(function($) {
 
-	$(document).on("scroll", onScroll);
-
-	$(window).scroll(function () {
-         $('.navbar-nav>li>a').each(function(){
-            $(this).removeClass('active');
-        })
-		$('.navbar-nav>li>a[href^="'+window.location.hash+'"]').addClass('active');	
-    });
-    
-    //smoothscroll
-    $('.navbar-nav>li>a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
-        $('a').each(function(){
-            $(this).removeClass('active');
-        })
-		$(this).addClass('active');	
-
-	    var target = this.hash,
-            menu = target;
-	    $target = $(target);
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top-50}, 500, 'swing', function () {
-	        window.location.hash = target;
-	        $(document).on("scroll", onScroll);
-	    });
-	});
-
-	function onScroll(event){
-	    var scrollPos = $(document).scrollTop();
-	    $('.navbar-nav>li>a').each(function () {
-	        var currLink = $(this);
-	        var refElement = $(currLink.attr("href"));
-	        if (refElement.position().top-70 <= scrollPos && refElement.position().top-50 + refElement.height() > scrollPos) {
-	           $('.navbar-nav>li>a').removeClass("active");
-	            currLink.addClass("active");
-	        }
-	        else{
-	            currLink.removeClass("active");
-	        }
-	    });
-	}
+	$('body').scrollspy({ target: '#main-nav' });
 
 	$('.navbar-nav>li>a').smoothScroll({
 		speed: 666,

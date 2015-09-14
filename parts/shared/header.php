@@ -1,6 +1,6 @@
 <header>
 	<div class="container-fluid">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse">
@@ -12,8 +12,8 @@
 					<a class="navbar-brand" href="<?php bloginfo('url'); ?>"></a>
 
 				</div>
-				<div class="collapse navbar-collapse" id="main-nav">
-					<ul class="nav navbar-nav">
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav" role="tablist">
 						<li><a href="#upstairs" class="active">Upstairs</a></li>
 						<li><a href="#downstairs">Downstairs</a></li>
 						<li><a href="#gear">Gear</a></li>
