@@ -1,14 +1,13 @@
-function setActive() {
-	if ($(this).hasClass('active')) {
-		return;
-	} else {
-		$('.navbar-nav>li.active').removeClass('active');
-		$(this).addClass('active');
-	}
-}
-
-
 jQuery(document).ready(function($) {
+
+	function setActive() {
+		if ($(this).hasClass('active')) {
+			return;
+		} else {
+			$('.navbar-nav>li.active').removeClass('active');
+			$(this).addClass('active');
+		}
+	}
 
 	$('.navbar-nav>li>a').smoothScroll({
 		speed: 666,
@@ -150,7 +149,7 @@ jQuery(document).ready(function($) {
 	    });
 	}
 
-	$('html, body').stop().animate({'scrollTop': $target.offset().top+2});
+	// $('html, body').stop().animate({'scrollTop': $target.offset().top+2});
 
 });
 
