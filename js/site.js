@@ -1,5 +1,8 @@
 jQuery(document).ready(function($) {
 
+	var $window = $(window),
+    $html = $('html');
+
 	$('body').scrollspy({ target: '#main-nav' });
 
 	$('.navbar-nav>li>a').smoothScroll({
@@ -9,8 +12,13 @@ jQuery(document).ready(function($) {
 		preventDefault: true
 	});
 
-	var $window = $(window),
-    $html = $('html');
+	$(window).scroll(function() {
+		if ($(document).scrollTop() > 50) {
+			$('.navbar-default').addClass('shift');
+		} else {
+			$('.navbar-default').removeClass('shift');
+		}
+	});
 
     // iPhone scroll handler
     // ---------------------

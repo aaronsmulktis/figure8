@@ -266,13 +266,13 @@ body, html {
 	background-size: contain;
 	background-position: center;
 	padding: 10px 5px;
-	margin-left: 10px;
+	margin: 10px 0;
 }
 
 .navbar-default .navbar-nav > .active > a#logo {
 	background: transparent !important;
 	background-image: none;
-	box-shadow: 0 !important;
+	box-shadow: none !important;
 }
 
 /* END LOCAL MENU */
