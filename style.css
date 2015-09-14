@@ -144,13 +144,19 @@ body, html {
 
 .navbar-default.shift {
 	margin-left: -50px;
-	transition: 1s all easeinout;
-	-webkit-transition: 1s all easeinout;
+	transition: 3s all easeinout !important;
+	-webkit-transition: 3s all easeinout !important;
+	-moz-transition: 3s all easeinout !important;
+	-o-transition: 3s all easeinout !important;
 }
 
 .navbar-default {
 	border: 0px;
 	color: black;
+	transition: 3s all easeinout !important;
+	-webkit-transition: 3s all easeinout !important;
+	-moz-transition: 3s all easeinout !important;
+	-o-transition: 3s all easeinout !important;
 }
 
 .navbar-header {
