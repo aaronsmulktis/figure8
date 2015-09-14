@@ -263,6 +263,10 @@ body, html {
 	margin-left: 10px;
 }
 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+	background: transparent;
+}
+
 /* END LOCAL MENU */
 
 .jumbotron {
