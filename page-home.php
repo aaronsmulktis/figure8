@@ -86,7 +86,7 @@
 		<div class="center-block" style="background-image: url(<?php the_field('rates_media'); ?>)">
 			<div class="center-info">
 				<div id="rates-acf" class="container-fluid">
-					<div class="col-md-8 col-md-offset-2"><?php the_field('rates'); ?></div>
+					<div class="col-md-10 col-md-offset-1"><?php the_field('rates'); ?></div>
 				</div>
 			</div>
 		</div>
