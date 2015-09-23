@@ -47,13 +47,37 @@
 				</div>
 			</div>			
 		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-5">
+					<div class="row"><img src="<?php the_field('downstairs_media'); ?>" /></div>
+					<div class="row top-buffer"><img src="<?php the_field('downstairs_media'); ?>" /></div>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="<?php the_field('downstairs_media'); ?>" />
+						</div>
+					</div>
+					<div class="row top-buffer">
+						<div class="col-md-6">
+							<img src="<?php the_field('downstairs_media'); ?>" />
+						</div>
+						<div class="col-md-6">
+							<img src="<?php the_field('downstairs_media'); ?>" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 	</div>
 
 	<!-- UPSTAIRS IMG GALLERY -->
-	<div id="upstairs-gallery">
+	<!-- <div id="upstairs-gallery">
 		<?php the_field('upstairs_gallery'); ?>
-	</div>
+	</div> -->
 
 	<hr>
 	<div id="downstairs" class="room container-fluid">
@@ -72,8 +96,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="room container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="col-md-5">
