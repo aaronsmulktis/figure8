@@ -183,6 +183,11 @@ body, html {
 	display: none;
 }
 
+#mob-brand {
+	color: black;
+    left: 30px;
+}
+
 .shower {
 	display: block !important;
 }

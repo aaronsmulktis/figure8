@@ -3,6 +3,9 @@
 		<nav id="main-nav" class="navbar navbar-default navbar-fixed-top shift" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
+					<div id="mob-brand" class="navbar-brand pull-left visible-xs">
+						<a id="logo" href="#content"><span>((8))</span></a>
+					</div>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse">
 					<i class="fa fa-arrow-down"></i>
 					</button>
