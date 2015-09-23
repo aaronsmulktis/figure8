@@ -131,7 +131,7 @@ jQuery(document).ready(function($) {
     });
 
     $('#mce-responses').on('click', function() {
-        $(this).fadeOut('slow');
+        $('.response').hide(1000);
     });
 
 	// $('html, body').stop().animate({'scrollTop': $target.offset().top+2});
