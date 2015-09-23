@@ -47,7 +47,10 @@
 				</div>
 			</div>			
 		</div>
+		
+	</div>
 
+	<div class="room container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="col-md-5">
@@ -71,7 +74,6 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>
 
 	<!-- UPSTAIRS IMG GALLERY -->
@@ -96,6 +98,8 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="room container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="col-md-5">
