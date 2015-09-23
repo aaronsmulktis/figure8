@@ -76,10 +76,10 @@
 	<div class="room container-fluid">
 		<div class="row">
 			<div class="col-md-3">
-				<div style="background:url(<?php the_field('downstairs_media'); ?>);"></div>
-				<div style="background:url(<?php the_field('downstairs_media'); ?>);"></div>
+				<div><img src="<?php the_field('downstairs_media'); ?>" /></div>
+				<div><img src="<?php the_field('downstairs_media'); ?>" /></div>
 			</div>
-			<div class="col-md-9" style="background:url(<?php the_field('downstairs_media'); ?>);"></div>
+			<div class="col-md-9"><img src="<?php the_field('downstairs_media'); ?>" /></div>
 		</div>
 	</div>
 	<hr>
