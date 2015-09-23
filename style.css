@@ -102,7 +102,7 @@ img {
 }
 
 hr {
-	border-top: 2px dotted pink;
+	/*border-top: 2px dotted pink;*/
     margin: 0;
     padding: 0;
 }
@@ -168,7 +168,7 @@ body, html {
 .navbar-default {
 	background: white;
 	box-shadow: none;
-	border-bottom: 1px solid hotpink;
+	/*border-bottom: 1px solid hotpink;*/
 }
 
 .navbar-default a.navbar-brand {
