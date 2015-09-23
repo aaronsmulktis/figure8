@@ -31,8 +31,7 @@
 							<div class="response" id="mce-success-response" style="display:none"></div>
 						</div>
 					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_2e0b9d52e641ba05b474de15d_11a016f12e" tabindex="-1" value=""></div>
-					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-						<button type="submit" class="btn btn-default">Now</button>
+					    <input type="submit" value="Join" name="Join" class="btn btn-default"></div>
 					</form>
 					<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 				</div>
