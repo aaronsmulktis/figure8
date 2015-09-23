@@ -469,6 +469,9 @@ footer {
 	.navbar-default .navbar-form {
 		padding: 0;
 	}
+	.csColumn {
+		text-align: center !important;
+	}
 }
 
 /* Small devices (tablets, 768px and up) */

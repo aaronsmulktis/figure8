@@ -76,6 +76,9 @@
 	<div id="gear" class="room">
 		<div id="gear-acf" class="container">
 			<div class="col-md-8 col-md-offset-2">
+				<h2><?php if(get_field('gear_title')) {
+						echo get_field('gear_title');
+					} ?></h2>
 				<?php the_field('gear'); ?>
 			</div>
 		</div>
