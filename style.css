@@ -185,11 +185,11 @@ body, html {
 
 #mob-brand {
 	color: black;
-    left: 30px;
+    left: 10px;
     position: relative;
 }
 
-#mob-brand a, #mob-brand a:hover, #mob-brand a:visited, #mob-brand a:active {color:black;}
+#mob-brand a, #mob-brand a:hover, #mob-brand a:visited, #mob-brand a:active {color:black !important;text-decoration: none !important;}
 
 .shower {
 	display: block !important;
