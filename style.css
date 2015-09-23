@@ -273,9 +273,12 @@ form.navbar-form div#mce-responses {
 	margin: 0;
 }
 
+#big-brand {
+	height: 93vh;
+}
+
 #scroll-down {
 	position:absolute;
-	bottom:25px;
 	left: 50%;
 	margin-left: -19px;
 	text-align: center;
