@@ -130,7 +130,7 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $('form.navbar-form #mce-responses').on('click', function() {
+    $('form.navbar-form div#mce-responses').on('click', function() {
         $(this).hide(1000);
     });
 
