@@ -494,7 +494,8 @@ a.entry-link {
 }
 
 footer {
-	padding-bottom: 15px;
+	padding: 30px;
+	color: black;
 }
 
 /* Tiny devices (phones, etc) */
