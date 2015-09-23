@@ -211,56 +211,15 @@ body, html {
 	color: black;
 }
 
-/*.menu-main-menu-container {
-	display: table;
-	margin: 0 auto;
-}
-
-.menu-main-menu-container ul#menu-main-menu li {
-	display: table-cell;
-  	padding-right: 40px;
-}
-
-.menu-main-menu-container ul#menu-main-menu li:last-child {
-	padding-right: 0px;
-}
-
-.menu-main-menu-container ul#menu-main-menu li a {font-family: 'Karla'; text-transform: uppercase; color: black}
-.menu-main-menu-container ul#menu-main-menu li a:hover {color: darkturquoise !important; text-decoration: none;}
-.menu-main-menu-container ul#menu-main-menu li a:active {color: darkturquoise !important; text-decoration: none;}
-
-.menu-main-menu-container ul#menu-main-menu, .menu-main-container ul#menu-main {
-	padding: 0px;
-	margin-top: 15px;
-}*/
-
-/* LOCAL */
-
-/*.menu-main-container {
-	display: table;
-	margin: 0 auto;
-}
-
-.menu-main-container ul#menu-main li {
-	display: table-cell;
-  	padding-right: 40px;
-}
-
-.menu-main-container ul#menu-main li:last-child {
-	padding-right: 0px;
-}
-
-.menu-main-container ul#menu-main li a {font-family: 'Karla'; text-transform: uppercase; color: black}
-.menu-main-container ul#menu-main li a:hover {color: darkturquoise !important; text-decoration: none;}
-.menu-main-container ul#menu-main li a:active {color: darkturquoise !important; text-decoration: none;}
-
-.menu-main-container ul#menu-main {
-	padding: 0px;
-}*/
-
 .nav>li {
 	padding: 0;
 	margin: 0;
+}
+
+.navbar-toggle {
+	color: black;
+    border-radius: 50%;
+    padding: 6px 10px;
 }
 
 #main-nav ul li:first-child span {
