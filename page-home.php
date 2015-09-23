@@ -73,11 +73,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="room container-fluid">
+	<div class="room container">
 		<div class="row">
 			<div class="col-md-3">
-				<div><img src="<?php the_field('downstairs_media'); ?>" /></div>
-				<div><img src="<?php the_field('downstairs_media'); ?>" /></div>
+				<div class="row"><img src="<?php the_field('downstairs_media'); ?>" /></div>
+				<div class="row"><img src="<?php the_field('downstairs_media'); ?>" /></div>
 			</div>
 			<div class="col-md-9"><img src="<?php the_field('downstairs_media'); ?>" /></div>
 		</div>
