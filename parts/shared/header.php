@@ -29,7 +29,7 @@
 						<div class="form-group">
 							<input type="email" class="form-control" placeholder="Keep In Touch" value="" name="EMAIL" id="mce-EMAIL">
 						</div>
-						<input type="submit" value="Join" name="Join" class="btn btn-default">
+						<input type="submit" value="Subscribe" name="subscribe" class="btn btn-default">
 						<div id="mce-responses">
 							<div class="response" id="mce-error-response" style="display:none"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
