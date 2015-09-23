@@ -281,7 +281,7 @@ body, html {
 	box-shadow: none !important;
 }
 
-.navbar-form #mce-responses {
+form.navbar-form #mce-responses {
 	position: absolute !important;
     width: 100% !important;
     height: 100vh !important;

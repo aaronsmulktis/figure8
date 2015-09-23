@@ -130,8 +130,8 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $('#mce-responses').on('click', function() {
-        $('.response').hide(1000);
+    $('form.navbar-form #mce-responses').on('click', function() {
+        $(this).hide(1000);
     });
 
 	// $('html, body').stop().animate({'scrollTop': $target.offset().top+2});
