@@ -75,11 +75,23 @@
 	</div>
 	<div class="room container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-5">
 				<div class="row"><img src="<?php the_field('downstairs_media'); ?>" /></div>
-				<div class="row"><img src="<?php the_field('downstairs_media'); ?>" /></div>
+				<div class="row top-buffer"><img src="<?php the_field('downstairs_media'); ?>" /></div>
 			</div>
-			<div class="col-md-9"><img src="<?php the_field('downstairs_media'); ?>" /></div>
+			<div class="col-md-7">
+				<div class="row">
+					<img src="<?php the_field('downstairs_media'); ?>" />
+				</div>
+				<div class="row top-buffer">
+					<div class="col-md-6">
+						<img src="<?php the_field('downstairs_media'); ?>" />
+					</div>
+					<div class="col-md-6">
+						<img src="<?php the_field('downstairs_media'); ?>" />
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<hr>
