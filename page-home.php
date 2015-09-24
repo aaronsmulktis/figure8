@@ -56,22 +56,22 @@
 				<div class="col-md-7">
 					<div class="row">
 						<div class="col-md-6">
-							<img src="http://figure8recording.com/wp-content/uploads/2015/03/1Final_final_001.png" />
+							<img src="<?php the_field('up-img-1'); ?>" />
 						</div>
 						<div class="col-md-6">
-							<img src="http://figure8recording.com/wp-content/uploads/2015/03/4Final_final_001.png" />
+							<img src="<?php the_field('up-img-2'); ?>" />
 						</div>
 					</div>
 					<div class="row top-buffer">
 						<div class="col-md-12">
-							<img src="http://figure8recording.com/wp-content/uploads/2015/03/17Final_final_001.png" />
+							<img src="<?php the_field('up-img-4'); ?>" />
 						</div>
 					</div>
 				</div>
 				<div class="col-md-5">
 
-					<div class="row"><img src="http://figure8recording.com/wp-content/uploads/2015/03/9Final_final_001.png" /></div>
-					<div class="row top-buffer"><img src="http://figure8recording.com/wp-content/uploads/2015/03/13Final_final_001.png" /></div>
+					<div class="row"><img src="<?php the_field('up-img-3'); ?>" /></div>
+					<div class="row top-buffer"><img src="<?php the_field('up-img-5'); ?>" /></div>
 
 				</div>
 			</div>
@@ -106,21 +106,21 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="col-md-5">
-					<div class="row"><img src="<?php the_field('downstairs_media'); ?>" /></div>
-					<div class="row top-buffer"><img src="<?php the_field('downstairs_media'); ?>" /></div>
+					<div class="row"><img src="<?php the_field('down-img-1'); ?>" /></div>
+					<div class="row top-buffer"><img src="<?php the_field('down-img-3'); ?>" /></div>
 				</div>
 				<div class="col-md-7">
 					<div class="row">
 						<div class="col-md-12">
-							<img src="<?php the_field('downstairs_media'); ?>" />
+							<img src="<?php the_field('down-img-2'); ?>" />
 						</div>
 					</div>
 					<div class="row top-buffer">
 						<div class="col-md-6">
-							<img src="<?php the_field('downstairs_media'); ?>" />
+							<img src="<?php the_field('down-img-4'); ?>" />
 						</div>
 						<div class="col-md-6">
-							<img src="<?php the_field('downstairs_media'); ?>" />
+							<img src="<?php the_field('down-img-5'); ?>" />
 						</div>
 					</div>
 				</div>
