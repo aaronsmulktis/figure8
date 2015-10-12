@@ -85,10 +85,9 @@
 					</div>
 				</div>
 				<div class="col-md-5">
-
 					<div class="row"><img src="<?php echo $upstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 					<div class="row top-buffer"><img src="<?php echo $upstairs5['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
-
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
@@ -155,6 +154,7 @@
 							<img src="<?php echo $downstairs5['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
