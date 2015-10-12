@@ -157,6 +157,7 @@ body, html {
 .navbar-default {
 	border: 0px;
 	color: black;
+	margin-left: 0px;
 	transition: 3s all easeinout !important;
 	-webkit-transition: 3s all easeinout !important;
 	-moz-transition: 3s all easeinout !important;
@@ -437,7 +438,7 @@ html.touch .center-block {
 	padding: 15px;
 }
 
-#upstairs {background: aliceblue}
+#upstairs {background: aliceblue; margin-top: -50px;}
 #upstairs .center-block {z-index: 10}
 
 #downstairs {background: white}
