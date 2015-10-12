@@ -61,7 +61,7 @@
 						$attachment_4 = get_field('upstairs_media_4');
 						$attachment_5 = get_field('upstairs_media_5');
 						
-						$size = "large";
+						$size = "medium";
 						
 						$upstairs1 = wp_get_attachment_image_src( $attachment_1, $size );
 						$upstairs2 = wp_get_attachment_image_src( $attachment_2, $size );
@@ -72,22 +72,22 @@
 					<?php if($upstairs1 || $upstairs2 || $upstairs3 || $upstairs4 || $upstairs5): //dont output an empty image tag ?>
 					<div class="row">
 						<div class="col-md-6">
-							<img src="<?php echo $upstairs1['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+							<img src="<?php echo $upstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 						<div class="col-md-6">
-							<img src="<?php echo $upstairs2['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+							<img src="<?php echo $upstairs2['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 					<div class="row top-buffer">
 						<div class="col-md-12">
-							<img src="<?php echo $upstairs4['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+							<img src="<?php echo $upstairs4['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 				</div>
 				<div class="col-md-5">
 
-					<div class="row"><img src="<?php echo $upstairs3['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
-					<div class="row top-buffer"><img src="<?php echo $upstairs5['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+					<div class="row"><img src="<?php echo $upstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+					<div class="row top-buffer"><img src="<?php echo $upstairs5['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 
 				</div>
 			</div>
@@ -129,7 +129,7 @@
 						$attachment_4 = get_field('downstairs_media_4');
 						$attachment_5 = get_field('downstairs_media_5');
 						
-						$size = "large";
+						$size = "medium";
 						
 						$downstairs1 = wp_get_attachment_image_src( $attachment_1, $size );
 						$downstairs2 = wp_get_attachment_image_src( $attachment_2, $size );
@@ -137,21 +137,21 @@
 						$downstairs4 = wp_get_attachment_image_src( $attachment_4, $size );
 						$downstairs5 = wp_get_attachment_image_src( $attachment_5, $size );
 					?>
-					<div class="row"><img src="<?php echo $downstairs1['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
-					<div class="row top-buffer"><img src="<?php echo $downstairs3['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+					<div class="row"><img src="<?php echo $downstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+					<div class="row top-buffer"><img src="<?php echo $downstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 				</div>
 				<div class="col-md-7">
 					<div class="row">
 						<div class="col-md-12">
-							<img src="<?php echo $downstairs2['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+							<img src="<?php echo $downstairs2['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 					<div class="row top-buffer">
 						<div class="col-md-6">
-							<img src="<?php echo $downstairs4['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+							<img src="<?php echo $downstairs4['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 						<div class="col-md-6">
-							<img src="<?php echo $downstairs5['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+							<img src="<?php echo $downstairs5['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 				</div>
