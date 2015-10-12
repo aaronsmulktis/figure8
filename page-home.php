@@ -28,7 +28,7 @@
 					} ?>
 				</p>
 			</div>
-			<a id="scroll-down"><i class="fa fa-arrow-circle-o-down"></i></a>
+			<a id="scroll-down" href="#"><i class="fa fa-arrow-circle-o-down"></i></a>
 		</div>
 	</div>
 

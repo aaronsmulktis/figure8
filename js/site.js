@@ -20,6 +20,13 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+    $(function() {
+        $('#scroll-down').click(function(e){
+            e.preventDefault();
+            body.animate({scrollTop:520}, '2000', 'swing');
+        });
+    });
+
     // iPhone scroll handler
     // ---------------------
     //
