@@ -137,6 +137,7 @@
 						$downstairs4 = wp_get_attachment_image_src( $attachment_4, $size );
 						$downstairs5 = wp_get_attachment_image_src( $attachment_5, $size );
 					?>
+					<?php if($downstairs1 || $downstairs2 || $downstairs3 || $downstairs4 || $downstairs5): //dont output an empty image tag ?>
 					<div class="row"><img src="<?php echo $downstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 					<div class="row top-buffer"><img src="<?php echo $downstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 				</div>
