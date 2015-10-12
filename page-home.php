@@ -126,15 +126,15 @@
 				<div class="col-md-7">
 					<div class="row">
 						<div class="col-md-12">
-								<img src="<?php echo $downstairs2['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $downstairs2['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 					<div class="row top-buffer">
 						<div class="col-md-6">
-								<img src="<?php echo $downstairs4['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $downstairs4['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 						<div class="col-md-6">
-								<img src="<?php echo $downstairs5['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $downstairs5['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 				</div>
