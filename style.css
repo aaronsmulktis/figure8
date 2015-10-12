@@ -295,6 +295,7 @@ form.navbar-form div#mce-responses {
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
+	opacity: 0.66;
 }
 
 #scroll-down i {
