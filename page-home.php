@@ -55,19 +55,11 @@
 			<div class="col-md-10 col-md-offset-1">
 				<div class="col-md-7">
 					<?php 
-						$attachment_1 = get_field('upstairs_media_1');
-						$attachment_2 = get_field('upstairs_media_2');
-						$attachment_3 = get_field('upstairs_media_3');
-						$attachment_4 = get_field('upstairs_media_4');
-						$attachment_5 = get_field('upstairs_media_5');
-						
-						$size = "medium";
-						
-						$upstairs1 = wp_get_attachment_image_src( $attachment_1, $size );
-						$upstairs2 = wp_get_attachment_image_src( $attachment_2, $size );
-						$upstairs3 = wp_get_attachment_image_src( $attachment_3, $size );
-						$upstairs4 = wp_get_attachment_image_src( $attachment_4, $size );
-						$upstairs5 = wp_get_attachment_image_src( $attachment_5, $size );
+						$upstairs1 = get_field('upstairs_media_1');
+						$upstairs2 = get_field('upstairs_media_2');
+						$upstairs3 = get_field('upstairs_media_3');
+						$upstairs4 = get_field('upstairs_media_4');
+						$upstairs5 = get_field('upstairs_media_5');
 					?>
 					<div class="row">
 						<div class="col-md-6">
@@ -120,20 +112,12 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="col-md-5">
-					<?php 
-						$attachment_1 = get_field('downstairs_media_1');
-						$attachment_2 = get_field('downstairs_media_2');
-						$attachment_3 = get_field('downstairs_media_3');
-						$attachment_4 = get_field('downstairs_media_4');
-						$attachment_5 = get_field('downstairs_media_5');
-						
-						$size = "medium";
-						
-						$downstairs1 = wp_get_attachment_image_src( $attachment_1, $size );
-						$downstairs2 = wp_get_attachment_image_src( $attachment_2, $size );
-						$downstairs3 = wp_get_attachment_image_src( $attachment_3, $size );
-						$downstairs4 = wp_get_attachment_image_src( $attachment_4, $size );
-						$downstairs5 = wp_get_attachment_image_src( $attachment_5, $size );
+					<?php
+						$downstairs1 = get_field('downstairs_media_1');
+						$downstairs2 = get_field('downstairs_media_2');
+						$downstairs3 = get_field('downstairs_media_3');
+						$downstairs4 = get_field('downstairs_media_4');
+						$downstairs5 = get_field('downstairs_media_5');
 					?>
 						<div class="row"><img src="<?php echo $downstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 
