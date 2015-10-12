@@ -72,7 +72,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<?php if($upstairs1): ?>
-							<img src="<?php echo $upstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $upstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 							<?php endif; ?>
 						</div>
 						<div class="col-md-6">
@@ -93,6 +93,7 @@
 					<?php if($upstairs3): ?>
 						<div class="row"><img src="<?php echo $upstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 					<?php endif; ?>
+
 					<?php if($upstairs5): ?>
 						<div class="row top-buffer"><img src="<?php echo $upstairs5['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 					<?php endif; ?>
@@ -164,7 +165,7 @@
 						<div class="col-md-6">
 							<?php if($downstairs4): ?>
 								<img src="<?php echo $downstairs4['sizes']['medium']; ?>" width="<?php echo $image['sizes']['medium-width']; ?>" height="<?php echo $image['sizes']['medium-height']; ?>" alt="<?php echo $image['caption']; ?>" />
-
+							<?php endif; ?>
 						</div>
 						<div class="col-md-6">
 							<?php if($downstairs5): ?>
