@@ -45,7 +45,7 @@
 	</div>
 
 	<div id="upstairs-gallery" class="room container">
-		<div class="row" id="upstairs-info">
+		<div class="room-info row" id="upstairs-info">
 			<div class="col-md-10 col-md-offset-1">
 				<?php if(get_field('upstairs_info')) {
 					echo get_field('upstairs_info');
@@ -105,7 +105,7 @@
 	</div>
 
 	<div id="downstairs-gallery" class="room container">
-		<div class="row" id="downstairs-info">
+		<div class="room-info row" id="downstairs-info">
 			<div class="col-md-10 col-md-offset-1"><?php if(get_field('downstairs_info')) {
 				echo get_field('downstairs_info');
 			} ?>
