@@ -1,0 +1,32 @@
+{
+  "name": "figure8",
+  "version": "0.1.0",
+  "description": "Figure 8 Recording - Website",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronsmulktis/figure8.git"
+  },
+  "keywords": [
+    "Figure",
+    "8",
+    "Recording",
+    "Studio",
+    "Brooklyn",
+    "Music"
+  ],
+  "author": "Aaron Smulktis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronsmulktis/figure8/issues"
+  },
+  "homepage": "https://github.com/aaronsmulktis/figure8#readme",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-less": "^1.0.1"
+  }
+}
