@@ -46,9 +46,11 @@
 
 	<div id="upstairs-gallery" class="room container">
 		<div class="row" id="upstairs-info">
-			<p><?php if(get_field('upstairs_info')) {
-				echo get_field('upstairs_info');
-			} ?></p>
+			<div class="col-md-10 col-md-offset-1">
+				<?php if(get_field('upstairs_info')) {
+					echo get_field('upstairs_info');
+				} ?>
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
@@ -98,16 +100,17 @@
 						echo get_field('downstairs');
 					} ?></h2>
 				</div>
-				<div id="downstairs-info">
-					<?php if(get_field('downstairs_info')) {
-						echo get_field('downstairs_info');
-					} ?>
-				</div>
 			</div>
 		</div>
 	</div>
 
 	<div id="downstairs-gallery" class="room container">
+		<div class="row" id="downstairs-info">
+			<div class="col-md-10 col-md-offset-1"><?php if(get_field('downstairs_info')) {
+				echo get_field('downstairs_info');
+			} ?>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="col-md-5">
