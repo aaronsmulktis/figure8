@@ -11,11 +11,3 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
-
-node_modules/
-
-bower_components/
-
-# Ignore stuff that gets built
-*.DS_Store
-style.css
