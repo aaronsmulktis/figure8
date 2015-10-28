@@ -1,8 +1,5 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sansa);
-@import url(//fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,100italic,300italic,400italic,500italic,700italic);
-@import url(//fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300,600);
 @import url(//fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
 /*
 Theme Name: 	Figure8
 Theme URI: 		http://figure8recording.com
@@ -192,6 +189,7 @@ html {
   padding: 0;
   margin: 0;
   font-family: 'Karla', sans-serif;
+  font-size: 14px;
   position: relative;
 }
 #global-container {
