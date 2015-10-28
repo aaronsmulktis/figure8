@@ -95,7 +95,7 @@
 					<h3>Got questions? Wanna talk?</h3>
 				</div>
 				<div class="col-sm-2">
-					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Ping Us.</a>
+					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
 		</div>
@@ -171,7 +171,7 @@
 					<h3>Got questions? Wanna talk?</h3>
 				</div>
 				<div class="col-sm-2">
-					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Ping Us.</a>
+					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
 		</div>
@@ -181,7 +181,7 @@
 	<div id="gear" class="room">
 		<div id="gear-acf" class="container">
 			<div class="row">
-				<h1><?php the_field('g-column1-title'); ?></h1>
+				<h1><?php the_field('gear_title'); ?></h1>
 				<div class="g-col1 col-md-4">
 					<h3><?php the_field('g-column1-title'); ?></h3>
 					<div class="g-box"><?php the_field('g-column1-b1'); ?></div>
@@ -279,7 +279,7 @@
 					<h3>Got questions? Wanna talk?</h3>
 				</div>
 				<div class="col-sm-2">
-					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Ping Us.</a>
+					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
 		</div>
