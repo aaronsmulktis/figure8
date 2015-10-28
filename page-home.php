@@ -85,9 +85,11 @@
 			</div>
 		</div>
 
-		<div class="room-info row" id="upstairs-call">
+		<hr class="marVert40">
+
+		<div class="room-info row padVert40" id="upstairs-call">
 			<div class="container">
-				<div class="col-sm-8 col-sm-offset-2">
+				<div class="col-sm-9 col-sm-offset-1">
 					<p>Got questions? Wanna talk?</p>
 				</div>
 				<div class="col-sm-2">
@@ -158,7 +160,7 @@
 
 		<hr class="marVert40">
 
-		<div class="room-info row padVert40" id="upstairs-call">
+		<div class="room-info row padVert40" id="downstairs-call">
 			<div class="container">
 				<div class="col-sm-9 col-sm-offset-1">
 					<p>Got questions? Wanna talk?</p>
@@ -260,6 +262,19 @@
 					wp_reset_postdata();?>
 				
 				</ul>
+			</div>
+		</div>
+
+		<hr class="marVert40">
+
+		<div class="room-info row padVert40" id="about-call">
+			<div class="container">
+				<div class="col-sm-9 col-sm-offset-1">
+					<p>Got questions? Wanna talk?</p>
+				</div>
+				<div class="col-sm-2">
+					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Ping Us.</a>
+				</div>
 			</div>
 		</div>
 	</div>
