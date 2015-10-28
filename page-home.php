@@ -158,7 +158,7 @@
 					<div class="g-box"><?php the_field('g-column1-b5'); ?></div>
 				</div>
 				<div class="g-col2 col-md-4">
-					<h3><?php the_field('g-column1-title'); ?></h3>
+					<h3><?php the_field('g-column2-title'); ?></h3>
 					<div class="g-box"><?php the_field('g-column2-b1'); ?></div>
 					<div class="g-box"><?php the_field('g-column2-b2'); ?></div>
 					<div class="g-box"><?php the_field('g-column2-b3'); ?></div>
@@ -166,7 +166,7 @@
 					<div class="g-box"><?php the_field('g-column2-b5'); ?></div>
 				</div>
 				<div class="g-col3 col-md-4">
-					<h3><?php the_field('g-column1-title'); ?></h3>
+					<h3><?php the_field('g-column3-title'); ?></h3>
 					<div class="g-box"><?php the_field('g-column3-b1'); ?></div>
 					<div class="g-box"><?php the_field('g-column3-b2'); ?></div>
 					<div class="g-box"><?php the_field('g-column3-b3'); ?></div>
