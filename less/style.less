@@ -98,11 +98,16 @@ body 				{ background: url(images/concrete_seamless.png) repeat; color: white;}
 
 .btn-default, a.btn-default, input.btn-default, div.btn-default {
 	background: @main;
-	color: lighten(white, 33%);
+	color: lighten(white, 50%);
 	border: 0px;
 	padding: 7px 11px;
 	margin: 0px 5px;
 	text-shadow:none;
+}
+
+.btn-default:hover, a.btn-default:hover, input.btn-default:hover, div.btn-default:hover {
+	background: darken(@main, 33%);
+	color: lighten(white, 33%);
 }
 
 body,
