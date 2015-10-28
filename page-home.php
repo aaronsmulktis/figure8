@@ -90,7 +90,7 @@
 				<p>Got questions? Wanna talk?</p>
 			</div>
 			<div class="col-sm-2">
-				<a href="mailto:phil@figure8recording.com" class="btn-default">Ping Us.</a>
+				<a href="mailto:phil@figure8recording.com" class="btn btn-default">Ping Us.</a>
 			</div>
 		</div>
 
