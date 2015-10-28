@@ -158,7 +158,7 @@
 
 		<div class="room-info row padVert40" id="upstairs-call">
 			<div class="container">
-				<div class="col-sm-8 col-sm-offset-1">
+				<div class="col-sm-9 col-sm-offset-1">
 					<p>Got questions? Wanna talk?</p>
 				</div>
 				<div class="col-sm-2">
