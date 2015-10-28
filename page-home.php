@@ -52,14 +52,7 @@
 				} ?>
 			</div>
 		</div>
-		<div class="room-info row" id="upstairs-call">
-			<div class="col-sm-10">
-				<p>Got questions? Wanna talk?</p>
-			</div>
-			<div class="col-sm-2">
-				<div class="btn btn-default"></div>
-			</div>
-		</div>
+
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="col-md-7">
@@ -91,6 +84,16 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="room-info row" id="upstairs-call">
+			<div class="col-sm-10">
+				<p>Got questions? Wanna talk?</p>
+			</div>
+			<div class="col-sm-2">
+				<a href="mailto:phil@figure8recording.com" class="btn-default"></a>
+			</div>
+		</div>
+
 	</div>
 
 	<!-- UPSTAIRS IMG GALLERY -->
