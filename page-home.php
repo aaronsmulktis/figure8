@@ -44,6 +44,8 @@
 		</div>
 	</div>
 
+	<hr class="marVert40">
+
 	<div id="upstairs-gallery" class="room container">
 		<div class="room-info row" id="upstairs-info">
 			<div class="col-md-10 col-md-offset-1">
@@ -118,6 +120,8 @@
 			</div>
 		</div>
 	</div>
+
+	<hr class="marVert40">
 
 	<div id="downstairs-gallery" class="room container">
 		<div class="room-info row" id="downstairs-info">
