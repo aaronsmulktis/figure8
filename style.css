@@ -113,6 +113,7 @@ a.btn-default,
 input.btn-default,
 div.btn-default {
   background: #dd9999;
+  color: #ffffff;
   border: 0px;
   padding: 7px 11px;
   margin: 0px 5px;
