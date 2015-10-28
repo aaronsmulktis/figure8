@@ -147,11 +147,27 @@
 	<hr>
 	<div id="gear" class="room">
 		<div id="gear-acf" class="container">
-			<div class="col-md-8 col-md-offset-2">
-				<h2><?php if(get_field('gear_title')) {
-						echo get_field('gear_title');
-					} ?></h2>
-				<?php the_field('gear'); ?>
+			<div class="row">
+				<div class="g-col1 col-md-4">
+					<div class="g-box"><?php the_field('g-column1-b1'); ?></div>
+					<div class="g-box"><?php the_field('g-column1-b2'); ?></div>
+					<div class="g-box"><?php the_field('g-column1-b3'); ?></div>
+					<div class="g-box"><?php the_field('g-column1-b4'); ?></div>
+					<div class="g-box"><?php the_field('g-column1-b5'); ?></div>
+				</div>
+				<div class="g-col2 col-md-4">
+					<div class="g-box"><?php the_field('g-column2-b1'); ?></div>
+					<div class="g-box"><?php the_field('g-column2-b2'); ?></div>
+					<div class="g-box"><?php the_field('g-column2-b3'); ?></div>
+					<div class="g-box"><?php the_field('g-column2-b4'); ?></div>
+					<div class="g-box"><?php the_field('g-column2-b5'); ?></div>
+				</div>
+				<div class="g-col3 col-md-4">
+					<div class="g-box"><?php the_field('g-column3-b1'); ?></div>
+					<div class="g-box"><?php the_field('g-column3-b2'); ?></div>
+					<div class="g-box"><?php the_field('g-column3-b3'); ?></div>
+					<div class="g-box"><?php the_field('g-column3-b4'); ?></div>
+				</div>
 			</div>
 		</div>
 	</div>
