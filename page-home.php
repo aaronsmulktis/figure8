@@ -156,7 +156,7 @@
 			</div>
 		</div>
 
-		<hr>
+		<hr class="padVert40">
 
 		<div class="room-info row padVert40" id="upstairs-call">
 			<div class="container">

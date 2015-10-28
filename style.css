@@ -83,7 +83,7 @@ body {
   letter-spacing: 6px;
 }
 .padVert40 {
-  padding: 40px 0;
+  padding: 40px 0 !important;
 }
 .arvo {
   font-family: 'Karla';
