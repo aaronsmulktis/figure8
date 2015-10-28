@@ -82,6 +82,9 @@ body {
   text-transform: uppercase !important;
   letter-spacing: 6px;
 }
+.padVert40 {
+  padding: 40px 0;
+}
 .arvo {
   font-family: 'Karla';
 }
