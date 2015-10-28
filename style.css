@@ -85,6 +85,9 @@ body {
 .padVert40 {
   padding: 40px 0 !important;
 }
+.marVert40 {
+  margin: 40px 0 !important;
+}
 .arvo {
   font-family: 'Karla';
 }
