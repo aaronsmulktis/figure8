@@ -22,11 +22,11 @@
 		<div id="big-brand" class="center-block" style="background-image: url(<?php the_field('hero_image'); ?>)">
 			<div id="big-logo">
 				<img src="<?php the_field('big_logo'); ?>" />
-				<p>
+				<h3>
 					<?php if(get_field('intro_text')) {
 						echo get_field('intro_text');
 					} ?>
-				</p>
+				</h3>
 			</div>
 			<a id="scroll-down" href="#"><i class="fa fa-arrow-circle-o-down"></i></a>
 		</div>
@@ -92,7 +92,7 @@
 		<div class="room-info row padVert40" id="upstairs-call">
 			<div class="container">
 				<div class="col-sm-9 col-sm-offset-1">
-					<p>Got questions? Wanna talk?</p>
+					<h3>Got questions? Wanna talk?</h3>
 				</div>
 				<div class="col-sm-2">
 					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Ping Us.</a>
@@ -168,7 +168,7 @@
 		<div class="room-info row padVert40" id="downstairs-call">
 			<div class="container">
 				<div class="col-sm-9 col-sm-offset-1">
-					<p>Got questions? Wanna talk?</p>
+					<h3>Got questions? Wanna talk?</h3>
 				</div>
 				<div class="col-sm-2">
 					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Ping Us.</a>
@@ -275,7 +275,7 @@
 		<div class="room-info row padVert40" id="about-call">
 			<div class="container">
 				<div class="col-sm-9 col-sm-offset-1">
-					<p>Got questions? Wanna talk?</p>
+					<h3>Got questions? Wanna talk?</h3>
 				</div>
 				<div class="col-sm-2">
 					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Ping Us.</a>
