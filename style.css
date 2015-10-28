@@ -483,22 +483,22 @@ html.touch .center-block {
   z-index: 10;
 }
 #downstairs {
-  background: #ffffff;
+  background: white;
 }
 #downstairs .center-block {
   z-index: 20;
 }
 #gear {
-  background: #f0f8ff;
+  background: aliceblue;
 }
 #rates {
-  background: #ffffff;
+  background: white;
 }
 #clients {
-  background: #f0f8ff;
+  background: aliceblue;
 }
 #about {
-  background: #ffffff;
+  background: white;
 }
 /* #gear  */
 div.csColumn {
