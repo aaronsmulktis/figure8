@@ -102,7 +102,10 @@ body {
   perspective: 1000;
   -webkit-perspective: 1000;
 }
-.btn-default {
+.btn-default,
+a.btn-default,
+input.btn-default,
+div.btn-default {
   background: #dd9999;
   border: 0px;
   padding: 7px 11px;
