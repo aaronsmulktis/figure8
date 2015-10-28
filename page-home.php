@@ -40,7 +40,7 @@
 						echo get_field('upstairs');
 					} ?></h2>
 				</div>
-			</div>			
+			</div>		
 		</div>
 	</div>
 
@@ -50,6 +50,14 @@
 				<?php if(get_field('upstairs_info')) {
 					echo get_field('upstairs_info');
 				} ?>
+			</div>
+		</div>
+		<div class="room-info row" id="upstairs-call">
+			<div class="col-sm-10">
+				<p>Got questions? Wanna talk?</p>
+			</div>
+			<div class="col-sm-2">
+				<div class="btn btn-default"></div>
 			</div>
 		</div>
 		<div class="row">
