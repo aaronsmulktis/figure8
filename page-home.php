@@ -155,6 +155,17 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="room-info row" id="upstairs-call">
+			<div class="container">
+				<div class="col-sm-8 col-sm-offset-2">
+					<p>Got questions? Wanna talk?</p>
+				</div>
+				<div class="col-sm-2">
+					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Ping Us.</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<hr>
