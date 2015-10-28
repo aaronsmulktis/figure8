@@ -156,6 +156,8 @@
 			</div>
 		</div>
 
+		<hr>
+
 		<div class="room-info row padVert40" id="upstairs-call">
 			<div class="container">
 				<div class="col-sm-9 col-sm-offset-1">
