@@ -502,6 +502,7 @@ div.csColumn {
   border-radius: 3px;
   box-shadow: 1px 1px 3px rgba(150, 40, 80, 0.3);
   text-align: left !important;
+  margin: 30px 0px;
 }
 .entry {
   margin: 30px auto;
