@@ -257,11 +257,9 @@
 							<div class="col-sm-7 text-left">
 								<h3><?php the_title(); ?></h3>
 								<p><?php the_excerpt(); ?></p>
-								<!-- <ul class="list-inline">
-									<li><a href="<?php the_field('link1'); ?>"><i class="fa fa-globe fa-2x"></i></a></li>
-									<li><a href="<?php the_field('link2'); ?>"><i class="fa fa-globe fa-2x"></i></a></li>
-									<li><a href="<?php the_field('link3'); ?>"><i class="fa fa-globe fa-2x"></i></a></li>
-								</ul> -->
+								<ul class="list-inline">
+									<li><a class="btn btn-default" href="<?php the_field('link1'); ?>">More Info</a></li>
+								</ul>
 							</div>
 						</li>
 					<?php endforeach; 
