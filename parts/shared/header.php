@@ -4,7 +4,7 @@
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<div id="mob-brand" class="navbar-brand pull-left visible-xs">
-						<a id="logo" href="#content"><span>((8))</span></a>
+						<a class="logo" href="#content"><span>((8))</span></a>
 					</div>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar-collapse">
 					<i class="fa fa-arrow-down"></i>
@@ -17,7 +17,7 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav" role="tablist">
-						<li class="hidden-xs"><a id="logo" href="#content"><span>((8))</span></a></li>
+						<li class="hidden-xs"><a class="logo" href="#content"><span>((8))</span></a></li>
 						<li><a href="#upstairs">Upstairs</a></li>
 						<li><a href="#downstairs">Downstairs</a></li>
 						<li><a href="#gear">Equipment</a></li>

@@ -302,7 +302,7 @@ html {
 .navbar-toggle {
   color: black !important;
   border-radius: 50% !important;
-  padding: 6px 10px !important;
+  padding: 7px 12px 5px 12px !important;
 }
 #main-nav ul li:first-child span {
   display: none;
@@ -314,7 +314,7 @@ html {
   padding: 10px 5px;
   margin: 0 10px;
 }
-.navbar-default .navbar-nav > .active > a#logo {
+.navbar-default .navbar-nav > .active > a.logo {
   background: transparent !important;
   background-image: none;
   box-shadow: none !important;
