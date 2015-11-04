@@ -514,6 +514,9 @@ html.touch .center-block {
 #about {
   background: #ffffff;
 }
+#about ul li {
+  margin: 10px 0px !important;
+}
 /* #gear  */
 div.csColumn {
   text-align: left !important;

@@ -18,8 +18,10 @@
 
 <div id="content">
 
+	<?php $hero = get_field('hero_image'); ?>
+
 	<div id="hero" class="room container-fluid">
-		<div id="big-brand" class="center-block" style="background-image: url(<?php the_field('hero_image'); ?>)">
+		<div id="big-brand" class="center-block" style="background-image: url(<?php echo $hero['sizes']['large']; ?>)">
 			<div id="big-logo">
 				<img src="<?php the_field('big_logo'); ?>" />
 				<h3>
