@@ -12,7 +12,6 @@
 					<div id="modal-nav-button" class="nav-button pull-left">
 						<a id="nav-button" href="#" class="hmbrgr"></a>
 					</div>
-					<a class="navbar-brand" href="<?php bloginfo('url'); ?>"></a>
 
 				</div>
 				<div class="collapse navbar-collapse">
