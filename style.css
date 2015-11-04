@@ -249,7 +249,7 @@ html {
   box-shadow: none;
   border-bottom: 1px solid lightgrey;
 }
-.navbar-default a.navbar-brand {
+a.logo {
   position: relative;
   background: url(images/figure-8-logo.svg) no-repeat;
   background-size: 117px 60px;
