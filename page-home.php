@@ -18,7 +18,11 @@
 
 <div id="content">
 
-	<?php $hero = get_field('hero_image'); ?>
+	<?php 
+		$hero = get_field('hero_image');
+		$upstairs = get_field('upstairs_media');
+		$downstairs = get_field('downstairs_media');
+	?>
 
 	<div id="hero" class="room container-fluid">
 		<div id="big-brand" class="center-block" style="background-image: url(<?php echo $hero['sizes']['large']; ?>)">
@@ -35,7 +39,7 @@
 	</div>
 
 	<div id="upstairs" class="room container-fluid">
-		<div class="center-block" style="background-image: url(<?php the_field('upstairs_media'); ?>)">
+		<div class="center-block" style="background-image: url(<?php echo $upstairs['sizes']['large']; ?>)">
 			<div class="center-info">
 				<div id="upstairs-title">
 					<h2><?php if(get_field('upstairs')) {
@@ -112,7 +116,7 @@
 	<hr>
 	<div id="downstairs" class="room container-fluid">
 		
-		<div class="center-block" style="background-image: url(<?php the_field('downstairs_media'); ?>)">
+		<div class="center-block" style="background-image: url(<?php echo $downstairs['sizes']['large']; ?>)">
 			<div class="center-info">
 				<div id="downstairs-title">
 					<h2><?php if(get_field('downstairs')) {
