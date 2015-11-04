@@ -82,6 +82,12 @@ body {
 .padVert40 {
   padding: 40px 0 !important;
 }
+.marVert10 {
+  margin: 10px 0 !important;
+}
+.marVert20 {
+  margin: 20px 0 !important;
+}
 .marVert40 {
   margin: 40px 0 !important;
 }
