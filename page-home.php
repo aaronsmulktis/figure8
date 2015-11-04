@@ -91,7 +91,7 @@
 
 		<div class="room-info row padVert40" id="upstairs-call">
 			<div class="container">
-				<div class="col-sm-4 col-sm-offset-3">
+				<div class="col-sm-6 col-sm-offset-2 text-right">
 					<h3><?php the_field('call-to-action'); ?></h3>
 				</div>
 				<div class="col-sm-2">
@@ -167,7 +167,7 @@
 
 		<div class="room-info row padVert40" id="downstairs-call">
 			<div class="container">
-				<div class="col-sm-4 col-sm-offset-3">
+				<div class="col-sm-6 col-sm-offset-2 text-right">
 					<h3><?php the_field('call-to-action'); ?></h3>
 				</div>
 				<div class="col-sm-2">
@@ -275,7 +275,7 @@
 
 		<div class="room-info row padVert40" id="about-call">
 			<div class="container">
-				<div class="col-sm-4 col-sm-offset-3">
+				<div class="col-sm-6 col-sm-offset-2 text-right">
 					<h3><?php the_field('call-to-action'); ?></h3>
 				</div>
 				<div class="col-sm-2">
