@@ -273,7 +273,7 @@
 
 		<hr class="marVert40">
 
-		<div class="room-info row padVert40" id="about-call">
+		<div class="room-info row-fluid padVert40" id="about-call">
 			<div class="container">
 				<div class="col-sm-6 col-sm-offset-2 text-right">
 					<h3><?php the_field('call-to-action'); ?></h3>
