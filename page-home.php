@@ -123,9 +123,10 @@
 
 	<div id="downstairs-gallery" class="room container">
 		<div class="room-info row" id="downstairs-info">
-			<div class="col-md-10 col-md-offset-1"><?php if(get_field('downstairs_info')) {
-				echo get_field('downstairs_info');
-			} ?>
+			<div class="col-md-10 col-md-offset-1">
+				<?php if(get_field('downstairs_info')) {
+					echo get_field('downstairs_info');
+				} ?>
 			</div>
 		</div>
 
@@ -258,7 +259,9 @@
 								<h3><?php the_title(); ?></h3>
 								<p><?php the_excerpt(); ?></p>
 								<ul class="list-inline">
-									<li><a class="btn btn-default" href="<?php the_field('link1'); ?>">More Info</a></li>
+									<?php if(get_field('downstairs_info')) { ?>
+										<li><a class="btn btn-default" href="<?php echo get_field('link1'); ?>">More Info</a></li>
+									<?php } ?>
 								</ul>
 							</div>
 						</li>
