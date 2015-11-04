@@ -177,7 +177,9 @@ vr {
   display: inline-block;
   vertical-align: bottom;
 }
-/*ul {list-style-type: none;}*/
+ul {
+  list-style-type: none;
+}
 li {
   margin: 10px;
   padding: 10px;
@@ -413,6 +415,9 @@ html.touch .center-block {
 }
 .room-info {
   text-align: left;
+}
+.room-info ul {
+  list-style-type: disc;
 }
 #big-logo {
   position: absolute;
