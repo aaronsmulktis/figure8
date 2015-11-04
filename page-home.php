@@ -22,6 +22,7 @@
 		$hero = get_field('hero_image');
 		$upstairs = get_field('upstairs_media');
 		$downstairs = get_field('downstairs_media');
+		$rates = get_field('rates_media');
 	?>
 
 	<div id="hero" class="room container-fluid">
@@ -219,7 +220,7 @@
 	<hr>
 	<div id="rates" class="room">
 
-		<div class="center-block" style="background-image: url(<?php the_field('rates_media'); ?>)">
+		<div class="center-block" style="background-image: url(<?php echo $rates['sizes']['large']; ?>)">
 			<div class="center-info">
 				<div id="rates-acf" class="container-fluid">
 					<div class=""><?php the_field('rates'); ?></div>
