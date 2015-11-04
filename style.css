@@ -171,9 +171,7 @@ vr {
   display: inline-block;
   vertical-align: bottom;
 }
-ul {
-  list-style-type: none;
-}
+/*ul {list-style-type: none;}*/
 li {
   margin: 10px;
   padding: 10px;
