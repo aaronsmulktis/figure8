@@ -259,9 +259,9 @@
 								<h3><?php the_title(); ?></h3>
 								<p><?php the_excerpt(); ?></p>
 								<ul class="list-inline">
-									<?php if(get_field('downstairs_info')) { ?>
+									<?php if(get_field('link1')) : ?>
 										<li><a class="btn btn-default" href="<?php echo get_field('link1'); ?>">More Info</a></li>
-									<?php } ?>
+									<?php endif; ?>
 								</ul>
 							</div>
 						</li>
