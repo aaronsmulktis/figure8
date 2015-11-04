@@ -254,6 +254,9 @@ html {
   left: 10px;
   position: relative;
 }
+#mob-brand a.logo span {
+  visibility: hidden;
+}
 #mob-brand a,
 #mob-brand a:hover,
 #mob-brand a:visited,
