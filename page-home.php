@@ -94,8 +94,6 @@
 			</div>
 		</div>
 
-		<hr class="marVert40">
-
 		<div class="room-info row padVert40" id="upstairs-call">
 			<div class="container">
 				<div class="col-sm-6 col-sm-offset-2 text-right">
@@ -109,12 +107,6 @@
 
 	</div>
 
-	<!-- UPSTAIRS IMG GALLERY -->
-	<!-- <div id="upstairs-gallery">
-		<?php the_field('upstairs_gallery'); ?>
-	</div> -->
-
-	<hr>
 	<div id="downstairs" class="room container-fluid">
 		
 		<div class="center-block" style="background-image: url(<?php echo $downstairs['sizes']['large']; ?>)">
@@ -171,8 +163,6 @@
 			</div>
 		</div>
 
-		<hr class="marVert40">
-
 		<div class="room-info row padVert40" id="downstairs-call">
 			<div class="container">
 				<div class="col-sm-6 col-sm-offset-2 text-right">
@@ -185,7 +175,6 @@
 		</div>
 	</div>
 
-	<hr>
 	<div id="gear" class="room">
 		<div id="gear-acf" class="container">
 			<div class="row">
@@ -217,7 +206,7 @@
 			</div>
 		</div>
 	</div>
-	<hr>
+
 	<div id="rates" class="room">
 
 		<div class="center-block" style="background-image: url(<?php echo $rates['sizes']['large']; ?>)">
@@ -229,7 +218,7 @@
 		</div>
 
 	</div>
-	<hr>
+
 	<div id="clients" class="room">
 		<div id="clients-acf" class="container">
 			<div class="col-md-8 col-md-offset-2">
@@ -237,7 +226,7 @@
 			</div>
 		</div>
 	</div>
-	<hr>
+
 	<div id="about" class="room scroll">
 		<div id="about-acf"  class="container">
 			<div class="col-md-8 col-md-offset-2">
