@@ -97,7 +97,7 @@
 		<div class="room-info row padVert40" id="upstairs-call">
 			<div class="container">
 				<div class="col-sm-6 col-sm-offset-2 text-right">
-					<h3><?php the_field('call-to-action'); ?></h3>
+					<h4><?php the_field('call-to-action'); ?></h4>
 				</div>
 				<div class="col-sm-2">
 					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Email Us</a>
@@ -166,7 +166,7 @@
 		<div class="room-info row padVert40" id="downstairs-call">
 			<div class="container">
 				<div class="col-sm-6 col-sm-offset-2 text-right">
-					<h3><?php the_field('call-to-action'); ?></h3>
+					<h4><?php the_field('call-to-action'); ?></h4>
 				</div>
 				<div class="col-sm-2">
 					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Email Us</a>
@@ -273,7 +273,7 @@
 		<div class="room-info row-fluid padVert40" id="about-call">
 			<div class="container">
 				<div class="col-sm-6 col-sm-offset-2 text-right">
-					<h3><?php the_field('call-to-action'); ?></h3>
+					<h4><?php the_field('call-to-action'); ?></h4>
 				</div>
 				<div class="col-sm-2">
 					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Email Us</a>
