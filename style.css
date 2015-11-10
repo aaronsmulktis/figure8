@@ -177,7 +177,7 @@ hr {
   border-width: 1px 0;
   /* top and bottom borders */
   border-style: solid;
-  border-color: gray;
+  border-color: lightgray;
   margin: 20px 10px;
   /* 20px space above/below, 10px left/right */
   /* ensure 1px gap between borders */
@@ -194,7 +194,7 @@ hr:after {
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
-  color: #999;
+  color: lightgray;
   display: inline;
   /* for vertical centering and background knockout */
   background-color: white;
