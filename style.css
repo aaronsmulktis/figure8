@@ -188,7 +188,7 @@ hr {
   box-sizing: content-box;
 }
 hr:after {
-  content: "§";
+  content: "\f025";
   /* section sign */
   color: #999;
   display: inline;
