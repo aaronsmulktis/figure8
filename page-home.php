@@ -100,7 +100,7 @@
 					<h4><?php the_field('call-to-action'); ?></h4>
 				</div>
 				<div class="col-sm-2">
-					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Email Us</a>
+					<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
 		</div>
@@ -169,7 +169,7 @@
 					<h4><?php the_field('call-to-action'); ?></h4>
 				</div>
 				<div class="col-sm-2">
-					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Email Us</a>
+					<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
 		</div>
@@ -178,7 +178,7 @@
 	<div id="gear" class="room">
 		<div id="gear-acf" class="container">
 			<div class="row">
-				<h1><?php the_field('gear_title'); ?></h1>
+				<h2><?php the_field('gear_title'); ?></h2>
 				<div class="g-col1 col-md-4">
 					<h3><?php the_field('g-column1-title'); ?></h3>
 					<div class="g-box"><?php the_field('g-column1-b1'); ?></div>
@@ -276,7 +276,7 @@
 					<h4><?php the_field('call-to-action'); ?></h4>
 				</div>
 				<div class="col-sm-2">
-					<a href="mailto:phil@figure8recording.com" class="btn btn-default">Email Us</a>
+					<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
 		</div>
