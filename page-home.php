@@ -220,10 +220,12 @@
 		</div>
 	</div>
 
-	<div id="clients" class="room" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
-		<div id="clients-acf" class="container">
-			<div class="client-box col-md-8 col-md-offset-2">
-				<?php the_field('clients'); ?>
+	<div id="clients" class="room container-fluid">
+		<div class="center-block" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
+			<div id="clients-acf" class="container">
+				<div class="client-box col-md-8 col-md-offset-2">
+					<?php the_field('clients'); ?>
+				</div>
 			</div>
 		</div>
 	</div>
