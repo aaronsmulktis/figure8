@@ -175,6 +175,18 @@
 		</div>
 	</div>
 
+	<div id="rates" class="room">
+
+		<div class="center-block" style="background-image: url(<?php echo $rates['sizes']['large']; ?>)">
+			<div class="center-info">
+				<div id="rates-acf" class="container-fluid">
+					<div class=""><?php the_field('rates'); ?></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
 	<div id="gear" class="room">
 		<div id="gear-acf" class="container">
 			<div class="row">
@@ -207,21 +219,9 @@
 		</div>
 	</div>
 
-	<div id="rates" class="room">
-
-		<div class="center-block" style="background-image: url(<?php echo $rates['sizes']['large']; ?>)">
-			<div class="center-info">
-				<div id="rates-acf" class="container-fluid">
-					<div class=""><?php the_field('rates'); ?></div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
 	<div id="clients" class="room">
 		<div id="clients-acf" class="container">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="client-box col-md-8 col-md-offset-2">
 				<?php the_field('clients'); ?>
 			</div>
 		</div>

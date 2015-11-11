@@ -543,6 +543,12 @@ html.touch .center-block {
 #clients {
   background: #f0f8ff;
 }
+#clients .cient-box {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.33);
+  padding: 20px;
+}
 #about {
   background: #ffffff;
 }
