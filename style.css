@@ -543,6 +543,10 @@ html.touch .center-block {
 #clients {
   background: #f0f8ff;
 }
+#clients {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #clients-acf .client-box {
   background: white;
   border-radius: 5px;
