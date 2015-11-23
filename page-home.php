@@ -74,10 +74,10 @@
 						$upstairs5 = get_field('upstairs_media_5');
 					?>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 padRight5">
 								<img src="<?php echo $upstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 padLeft5">
 								<img src="<?php echo $upstairs2['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
@@ -153,10 +153,10 @@
 						</div>
 					</div>
 					<div class="row top-buffer">
-						<div class="col-md-6">
+						<div class="col-md-6 padRight5">
 								<img src="<?php echo $downstairs4['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 padLeft5">
 								<img src="<?php echo $downstairs5['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
@@ -256,7 +256,7 @@
 							</div>
 							<div class="col-sm-7 text-left">
 								<h3><?php the_title(); ?></h3>
-								<p><?php the_excerpt(); ?></p>
+								<p><?php the_content(); ?></p>
 								<ul class="list-inline">
 									<?php if(get_field('link1')) : ?>
 										<li><a class="btn btn-default" href="<?php echo get_field('link1'); ?>">More Info</a></li>
