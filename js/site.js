@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+    var body = $('html, body');
+
 	var $window = $(window),
     $html = $('html');
 
