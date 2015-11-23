@@ -75,22 +75,22 @@
 					?>
 					<div class="row">
 						<div class="col-md-6">
-								<img src="<?php echo $upstairs1['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $upstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 						<div class="col-md-6">
-								<img src="<?php echo $upstairs2['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $upstairs2['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 					<div class="row top-buffer">
 						<div class="col-md-12">
-								<img src="<?php echo $upstairs4['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $upstairs4['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 				</div>
 				<div class="col-md-5">
-						<div class="row"><img src="<?php echo $upstairs3['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+						<div class="row"><img src="<?php echo $upstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 
-						<div class="row top-buffer"><img src="<?php echo $upstairs5['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+						<div class="row top-buffer"><img src="<?php echo $upstairs5['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 				</div>
 			</div>
 		</div>
@@ -142,22 +142,22 @@
 						$downstairs4 = get_field('downstairs_media_4');
 						$downstairs5 = get_field('downstairs_media_5');
 					?>
-						<div class="row"><img src="<?php echo $downstairs1['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+						<div class="row"><img src="<?php echo $downstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 
-						<div class="row top-buffer"><img src="<?php echo $downstairs3['sizes']['large']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+						<div class="row top-buffer"><img src="<?php echo $downstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 				</div>
 				<div class="col-md-7">
 					<div class="row">
 						<div class="col-md-12">
-								<img src="<?php echo $downstairs2['sizes']['large']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $downstairs2['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 					<div class="row top-buffer">
 						<div class="col-md-6">
-								<img src="<?php echo $downstairs4['sizes']['large']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $downstairs4['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 						<div class="col-md-6">
-								<img src="<?php echo $downstairs5['sizes']['large']; ?>" alt="<?php echo $image['caption']; ?>" />
+								<img src="<?php echo $downstairs5['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 				</div>
@@ -252,7 +252,7 @@
 					foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 						<li class="row">
 							<div class="col-sm-5">
-								<?php the_post_thumbnail('large',''); ?>
+								<?php the_post_thumbnail('medium',''); ?>
 							</div>
 							<div class="col-sm-7 text-left">
 								<h3><?php the_title(); ?></h3>
