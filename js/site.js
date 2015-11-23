@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 
     $('#scroll-down').click(function(e){
         e.preventDefault();
-        body.animate({scrollTop:'#upstairs'}, '2500', 'swing');
+        body.animate({scrollTop:640}, '2500', 'swing');
     });
 
     // iPhone scroll handler
