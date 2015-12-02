@@ -499,6 +499,7 @@ html.touch .center-block {
 .room {
 	position: relative;
 	min-height: 100vh;
+	height: 100%;
 	padding: 6.6% 0;
 	text-align: center;
 	-ms-box-sizing: border-box;
@@ -526,7 +527,6 @@ html.touch .center-block {
 
 #gear {background: aliceblue}
 #rates {background: white}
-#clients {background: aliceblue}
 
 #clients {background-repeat: no-repeat; background-size: cover;}
 
@@ -616,6 +616,13 @@ footer {
 	}
 	.csColumn {
 		text-align: center !important;
+	}
+	#clients .center-block {
+		height: auto !important;
+		position: static;
+	}
+	#clients-acf .client-box {
+		margin-top: 0 !important;
 	}
 }
 
