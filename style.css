@@ -615,6 +615,15 @@ footer {
   padding: 30px;
   color: black;
 }
+@media (max-width: 767px) {
+  #clients .center-block {
+    height: auto !important;
+    position: static;
+  }
+  #clients-acf .client-box {
+    margin-top: 0 !important;
+  }
+}
 /* Tiny devices (phones, etc) */
 @media (max-width: 480px) {
   .navbar-default.shift {
@@ -625,13 +634,6 @@ footer {
   }
   .csColumn {
     text-align: center !important;
-  }
-  #clients .center-block {
-    height: auto !important;
-    position: static;
-  }
-  #clients-acf .client-box {
-    margin-top: 0 !important;
   }
 }
 /* 400 and up */
