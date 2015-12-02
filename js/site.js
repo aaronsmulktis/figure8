@@ -22,9 +22,17 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-    $('#scroll-down').click(function(e){
-        e.preventDefault();
-        body.animate({scrollTop:640}, '2500', 'swing');
+    // $('#scroll-down').click(function(e){
+    //     e.preventDefault();
+    //     body.animate({scrollTop:640}, '2500', 'swing');
+    // });
+
+    $('#scroll-down').smoothScroll({
+        speed: 666,
+        // offset: -50,
+        scrollTarget: '#upstairs',
+        easing: 'swing',
+        preventDefault: true
     });
 
     // iPhone scroll handler
