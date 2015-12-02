@@ -60,9 +60,7 @@
 				} ?>
 			</div>
 			<div class="col-md-5">
-				<?php if(get_field('upstairs_floorplan')) {
-					echo get_field('upstairs_floorplan');
-				} ?>
+				<img src="<?php if(get_field('upstairs_floorplan')) {echo get_field('upstairs_floorplan');} ?>" />
 			</div>
 		</div>
 
@@ -134,9 +132,7 @@
 				} ?>
 			</div>
 			<div class="col-md-5">
-				<?php if(get_field('downstairs_floorplan')) {
-					echo get_field('downstairs_floorplan');
-				} ?>
+				<img src="<?php if(get_field('downstairs_floorplan')) {echo get_field('downstairs_floorplan');} ?>" />
 			</div>
 		</div>
 
