@@ -70,32 +70,32 @@ body {
 02 Variables -----------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 .nopadding {
-  padding: 0px !important;
+  padding: 0px;
 }
 .nomargin {
-  padding: 0px !important;
+  padding: 0px;
 }
 .capped {
-  text-transform: uppercase !important;
+  text-transform: uppercase;
   letter-spacing: 6px;
 }
 .padVert40 {
-  padding: 40px 0 !important;
+  padding: 40px 0;
 }
 .padLeft5 {
-  padding-left: 5px !important;
+  padding-left: 5px;
 }
 .padRight5 {
-  padding-right: 5px !important;
+  padding-right: 5px;
 }
 .marVert10 {
-  margin: 10px 0 !important;
+  margin: 10px 0;
 }
 .marVert20 {
-  margin: 20px 0 !important;
+  margin: 20px 0;
 }
 .marVert40 {
-  margin: 40px 0 !important;
+  margin: 40px 0;
 }
 .arvo {
   font-family: 'Karla';
@@ -617,8 +617,9 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   #clients .center-block {
-    height: 100vh;
+    height: 100vh !important;
     position: static;
+    background: #bfd3f8;
   }
   #clients-acf .client-box {
     margin-top: 0 !important;
