@@ -615,7 +615,7 @@ footer {
   padding: 30px;
   color: black;
 }
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   #clients .center-block {
     height: auto !important;
     position: static !important;
@@ -625,7 +625,7 @@ footer {
   }
 }
 /* Tiny devices (phones, etc) */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .navbar-default.shift {
     margin: 0;
   }
