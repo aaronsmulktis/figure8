@@ -129,7 +129,7 @@
 			<div class="col-md-2">
 				<img src="<?php if(get_field('downstairs_floorplan')) {echo get_field('downstairs_floorplan');} ?>" />
 			</div>
-			<div class="col-md-8 col-md-offset-1 text-right">
+			<div class="col-md-8 col-md-offset-1">
 				<?php if(get_field('downstairs_info')) {
 					echo get_field('downstairs_info');
 				} ?>
