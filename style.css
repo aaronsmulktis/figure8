@@ -398,6 +398,9 @@ form.navbar-form div#mce-responses {
   animation-timing-function: ease-in-out;
   opacity: 0.66;
 }
+#scroll-down:hover {
+  opacity: 1;
+}
 #scroll-down i {
   margin: 0 auto;
   color: white;
