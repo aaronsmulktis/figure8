@@ -26,9 +26,9 @@
 					</ul>
 					<form class="navbar-form navbar-left pull-right hidden-sm" action="//figure8recording.us11.list-manage.com/subscribe/post?u=2e0b9d52e641ba05b474de15d&amp;id=11a016f12e" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Keep In Touch" value="" name="EMAIL" id="mce-EMAIL">
+							<input type="email" class="form-control" placeholder="Keep In Touch!" value="" name="EMAIL" id="mce-EMAIL">
 						</div>
-						<input type="submit" value="Subscribe" name="subscribe" class="btn btn-default">
+						<input type="submit" value="Get Updates" name="subscribe" class="btn btn-default">
 						<div id="mce-responses">
 							<div class="response" id="mce-error-response" style="display:none"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
