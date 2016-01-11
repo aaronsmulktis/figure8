@@ -67,7 +67,7 @@
 		<hr class="marVert40">
 
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-12">
 				<div class="col-md-7">
 					<?php 
 						$upstairs1 = get_field('upstairs_media_1');
@@ -139,7 +139,7 @@
 		<hr class="marVert40">
 
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-12">
 				<div class="col-md-5">
 					<?php
 						$downstairs1 = get_field('downstairs_media_1');
