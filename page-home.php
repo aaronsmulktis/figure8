@@ -54,12 +54,12 @@
 
 	<div id="upstairs-gallery" class="room container">
 		<div class="room-info row" id="upstairs-info">
-			<div class="col-md-5 col-md-offset-1">
+			<div class="col-md-6">
 				<?php if(get_field('upstairs_info')) {
 					echo get_field('upstairs_info');
 				} ?>
 			</div>
-			<div class="col-md-5">
+			<div class="col-md-6">
 				<img src="<?php if(get_field('upstairs_floorplan')) {echo get_field('upstairs_floorplan');} ?>" />
 			</div>
 		</div>
