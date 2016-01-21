@@ -73,7 +73,7 @@ body {
   padding: 0px;
 }
 .nomargin {
-  padding: 0px;
+  margin: 0px;
 }
 .capped {
   text-transform: uppercase;
@@ -258,6 +258,9 @@ html {
 .contact-page,
 .about-page {
   padding-top: 20px;
+}
+header {
+  width: 100%:;
 }
 .navbar-default.shift {
   margin-left: -55px;
