@@ -558,8 +558,8 @@ html.touch .center-block {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#clients-acf .client-box {
-  background: white;
+#clients .client-box {
+  background: black;
   /*border-radius: 5px;*/
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.33);
   padding: 20px;
@@ -587,14 +587,6 @@ div.csColumn {
   position: relative;
 }
 #gear .g-col1 .g-box {
-  background: cornsilk;
-  padding: 10px;
-  /*border-radius: 3px;*/
-  box-shadow: 1px 1px 3px rgba(150, 40, 80, 0.2);
-  text-align: left;
-  margin: 30px 0px;
-}
-#gear .g-col2 .g-box {
   background: white;
   padding: 10px;
   /*border-radius: 3px;*/
@@ -602,8 +594,16 @@ div.csColumn {
   text-align: left;
   margin: 30px 0px;
 }
+#gear .g-col2 .g-box {
+  background: #e1e1e1;
+  padding: 10px;
+  /*border-radius: 3px;*/
+  box-shadow: 1px 1px 3px rgba(150, 40, 80, 0.2);
+  text-align: left;
+  margin: 30px 0px;
+}
 #gear .g-col3 .g-box {
-  background: #bbbbbb;
+  background: #d5d5d5;
   padding: 10px;
   /*border-radius: 3px;*/
   box-shadow: 1px 1px 3px rgba(150, 40, 80, 0.2);
@@ -625,9 +625,7 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   #clients .center-block {
-    height: 200vh !important;
     position: static;
-    background: #bfd3f8;
   }
   #clients-acf .client-box {
     margin-top: 0 !important;
