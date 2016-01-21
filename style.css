@@ -656,6 +656,17 @@ footer {
   .csColumn {
     text-align: center !important;
   }
+  #main-menu .nav > li {
+    padding: 0 20px;
+  }
+  .navbar-default {
+    padding-right: 10px;
+  }
+  .navbar-header {
+    width: auto;
+    text-align: center;
+    color: white;
+  }
 }
 /* 400 and up */
 @media screen and (min-width: 400px) {
