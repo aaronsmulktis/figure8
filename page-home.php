@@ -27,28 +27,32 @@
 	?>
 
 	<div id="hero" class="room container-fluid">
-		<div id="big-brand" class="center-block" style="background-image: url(<?php echo $hero['sizes']['large']; ?>)">
-			<div id="big-logo">
-				<img src="<?php the_field('big_logo'); ?>" />
-				<h3>
-					<?php if(get_field('intro_text')) {
-						echo get_field('intro_text');
-					} ?>
-				</h3>
+		<div class="row">
+			<div id="big-brand" class="center-block" style="background-image: url(<?php echo $hero['sizes']['large']; ?>)">
+				<div id="big-logo">
+					<img src="<?php the_field('big_logo'); ?>" />
+					<h3>
+						<?php if(get_field('intro_text')) {
+							echo get_field('intro_text');
+						} ?>
+					</h3>
+				</div>
+				<a id="scroll-down" href="#"><i class="fa fa-chevron-down"></i></a>
 			</div>
-			<a id="scroll-down" href="#"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
 
 	<div id="upstairs" class="room container-fluid">
-		<div class="center-block" style="background-image: url(<?php echo $upstairs['sizes']['large']; ?>)">
-			<div class="center-info">
-				<div id="upstairs-title">
-					<h2><?php if(get_field('upstairs')) {
-						echo get_field('upstairs');
-					} ?></h2>
-				</div>
-			</div>		
+		<div class="row">
+			<div class="center-block" style="background-image: url(<?php echo $upstairs['sizes']['large']; ?>)">
+				<div class="center-info">
+					<div id="upstairs-title">
+						<h2><?php if(get_field('upstairs')) {
+							echo get_field('upstairs');
+						} ?></h2>
+					</div>
+				</div>		
+			</div>
 		</div>
 	</div>
 
@@ -112,15 +116,18 @@
 	</div>
 
 	<div id="downstairs" class="room container-fluid">
+		<div class="row">
 		
-		<div class="center-block" style="background-image: url(<?php echo $downstairs['sizes']['large']; ?>)">
-			<div class="center-info">
-				<div id="downstairs-title">
-					<h2><?php if(get_field('downstairs')) {
-						echo get_field('downstairs');
-					} ?></h2>
+			<div class="center-block" style="background-image: url(<?php echo $downstairs['sizes']['large']; ?>)">
+				<div class="center-info">
+					<div id="downstairs-title">
+						<h2><?php if(get_field('downstairs')) {
+							echo get_field('downstairs');
+						} ?></h2>
+					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 
@@ -187,7 +194,9 @@
 		<div class="center-block" style="background-image: url(<?php echo $rates['sizes']['large']; ?>)">
 			<div class="center-info">
 				<div id="rates-acf" class="container-fluid">
-					<div class=""><?php the_field('rates'); ?></div>
+					<div class="row">
+						<?php the_field('rates'); ?>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -227,52 +236,56 @@
 	</div>
 
 	<div id="clients" class="container-fluid">
-		<div class="center-block" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
-		</div>
+		<div class="row">
+			<div class="center-block" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
+			</div>
 
-		<div class="client-box col-md-8 col-md-offset-2">
-			<?php the_field('clients'); ?>
+			<div class="client-box col-md-8 col-md-offset-2">
+				<?php the_field('clients'); ?>
+			</div>
 		</div>
 	</div>
 
 	<div id="about" class="room scroll">
 		<div id="about-acf"  class="container">
-			<div class="col-md-8 col-md-offset-2">
-				<?php the_field('about'); ?>
-				
-				<?php if ( is_active_sidebar( 'personnel' ) ) : ?>
-					<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-						<?php dynamic_sidebar( 'personnel' ); ?>
-					</div>
-					<!-- #primary-sidebar -->
-				<?php endif; ?>
-				
-				<ul class="container-fluid">
-					<?php
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<?php the_field('about'); ?>
 					
+					<?php if ( is_active_sidebar( 'personnel' ) ) : ?>
+						<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+							<?php dynamic_sidebar( 'personnel' ); ?>
+						</div>
+						<!-- #primary-sidebar -->
+					<?php endif; ?>
 					
-					$args = array( 'posts_per_page' => 15, 'category_name' => 'people', 'order' => 'DESC' );
+					<ul class="container-fluid">
+						<?php
+						
+						
+						$args = array( 'posts_per_page' => 15, 'category_name' => 'people', 'order' => 'DESC' );
+						
+						$myposts = get_posts( $args );
+						foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+							<li class="row">
+								<div class="col-sm-5">
+									<?php the_post_thumbnail('medium',''); ?>
+								</div>
+								<div class="col-sm-7 text-left">
+									<h3><?php the_title(); ?></h3>
+									<p><?php the_content(); ?></p>
+									<ul class="list-inline">
+										<?php if(get_field('link1')) : ?>
+											<li><a class="btn btn-default" href="<?php echo get_field('link1'); ?>">More Info</a></li>
+										<?php endif; ?>
+									</ul>
+								</div>
+							</li>
+						<?php endforeach; 
+						wp_reset_postdata();?>
 					
-					$myposts = get_posts( $args );
-					foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-						<li class="row">
-							<div class="col-sm-5">
-								<?php the_post_thumbnail('medium',''); ?>
-							</div>
-							<div class="col-sm-7 text-left">
-								<h3><?php the_title(); ?></h3>
-								<p><?php the_content(); ?></p>
-								<ul class="list-inline">
-									<?php if(get_field('link1')) : ?>
-										<li><a class="btn btn-default" href="<?php echo get_field('link1'); ?>">More Info</a></li>
-									<?php endif; ?>
-								</ul>
-							</div>
-						</li>
-					<?php endforeach; 
-					wp_reset_postdata();?>
-				
-				</ul>
+					</ul>
+				</div>
 			</div>
 		</div>
 
@@ -280,11 +293,13 @@
 
 		<div class="room-info row-fluid padVert40" id="about-call">
 			<div class="container">
-				<div class="col-sm-6 col-sm-offset-2 text-right">
-					<h4><?php the_field('call-to-action'); ?></h4>
-				</div>
-				<div class="col-sm-2">
-					<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-2 text-right">
+						<h4><?php the_field('call-to-action'); ?></h4>
+					</div>
+					<div class="col-sm-2">
+						<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
+					</div>
 				</div>
 			</div>
 		</div>
