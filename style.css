@@ -250,7 +250,7 @@ html {
   line-height: 24px;
   position: relative;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -639,6 +639,10 @@ footer {
   #clients .center-block {
     /*position: static;*/
   }
+  .mobile-img {
+    padding: 0 !important;
+    margin: 10px 0 !important;
+  }
 }
 /* Tiny devices (phones, etc) */
 @media screen and (max-width: 480px) {
@@ -671,10 +675,6 @@ footer {
     width: auto;
     text-align: center;
     color: white;
-  }
-  .mobile-img {
-    padding: 0 !important;
-    margin: 10px 0 !important;
   }
 }
 /* 400 and up */
