@@ -226,11 +226,9 @@
 		</div>
 	</div>
 
-	<div id="clients" class="container-fluid">
-		<div class="center-block" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
-			<div class="client-box col-md-8 col-md-offset-2">
-				<?php the_field('clients'); ?>
-			</div>
+	<div id="clients" class="container-fluid" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
+		<div class="client-box col-md-8 col-md-offset-2">
+			<?php the_field('clients'); ?>
 		</div>
 	</div>
 
