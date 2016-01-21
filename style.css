@@ -386,6 +386,7 @@ form.navbar-form div#mce-responses {
 #scroll-down {
   position: absolute;
   left: 50%;
+  bottom: 20px;
   margin-left: -19px;
   text-align: center;
   -webkit-animation-name: scrolldown;
@@ -535,7 +536,7 @@ html.touch .center-block {
   padding: 15px;
 }
 #upstairs {
-  background: aliceblue;
+  background: #eeeeee;
   margin-top: -50px;
 }
 #upstairs .center-block {
@@ -548,7 +549,7 @@ html.touch .center-block {
   z-index: 20;
 }
 #gear {
-  background: #f0f8ff;
+  background: #eeeeee;
 }
 #rates {
   background: #ffffff;
@@ -602,7 +603,7 @@ div.csColumn {
   margin: 30px 0px;
 }
 #gear .g-col3 .g-box {
-  background: #bfd3f8;
+  background: #bbbbbb;
   padding: 10px;
   /*border-radius: 3px;*/
   box-shadow: 1px 1px 3px rgba(150, 40, 80, 0.2);

@@ -29,6 +29,7 @@ CONTENTS:
 
 /*  Variables  */
 @main : #dd9999;
+@grey : #eee;
 
 
 div,
@@ -356,6 +357,7 @@ form.navbar-form div#mce-responses {
 #scroll-down {
 	position:absolute;
 	left: 50%;
+	bottom: 20px;
 	margin-left: -19px;
 	text-align: center;
 	-webkit-animation-name: scrolldown;
@@ -525,13 +527,13 @@ html.touch .center-block {
 	padding: 15px;
 }
 
-#upstairs {background: aliceblue; margin-top: -50px;}
+#upstairs {background: @grey; margin-top: -50px;}
 #upstairs .center-block {z-index: 10}
 
 #downstairs {background: white}
 #downstairs .center-block {z-index: 20}
 
-#gear {background: aliceblue}
+#gear {background: @grey;}
 #rates {background: white}
 
 #clients {background-repeat: no-repeat; background-size: cover;}
@@ -589,7 +591,7 @@ div.csColumn {
 }
 
 #gear .g-col3 .g-box {
-	background: lighten(cornflowerblue, 20%);
+	background: darken(@grey, 20%);
     padding: 10px;
     /*border-radius: 3px;*/
     box-shadow: 1px 1px 3px rgba(150,40,80,0.2);
