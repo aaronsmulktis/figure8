@@ -27,7 +27,7 @@
 	?>
 
 	<div id="hero" class="room container-fluid">
-		<div id="big-brand" class="center-block" style="background-image: url(<?php echo $hero['sizes']['large']; ?>)">
+		<div id="big-brand" class="center-block" style="background: url(<?php echo $hero['sizes']['large']; ?>)">
 			<div id="big-logo">
 				<img src="<?php the_field('big_logo'); ?>" />
 				<h3>
@@ -41,7 +41,7 @@
 	</div>
 
 	<div id="upstairs" class="room container-fluid">
-		<div class="center-block" style="background-image: url(<?php echo $upstairs['sizes']['large']; ?>)">
+		<div class="center-block" style="background: url(<?php echo $upstairs['sizes']['large']; ?>)">
 			<div class="center-info">
 				<div id="upstairs-title">
 					<h2><?php if(get_field('upstairs')) {
@@ -77,15 +77,15 @@
 						$upstairs5 = get_field('upstairs_media_5');
 					?>
 					<div class="row">
-						<div class="col-md-6 padRight5">
+						<div class="col-md-6 padRight5 mobile-img">
 								<img src="<?php echo $upstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
-						<div class="col-md-6 padLeft5">
+						<div class="col-md-6 padLeft5 mobile-img">
 								<img src="<?php echo $upstairs2['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
 					<div class="row top-buffer">
-						<div class="col-md-12">
+						<div class="col-md-12 mobile-img">
 								<img src="<?php echo $upstairs4['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
@@ -113,7 +113,7 @@
 
 	<div id="downstairs" class="room container-fluid">
 		
-		<div class="center-block" style="background-image: url(<?php echo $downstairs['sizes']['large']; ?>)">
+		<div class="center-block" style="background: url(<?php echo $downstairs['sizes']['large']; ?>)">
 			<div class="center-info">
 				<div id="downstairs-title">
 					<h2><?php if(get_field('downstairs')) {
@@ -154,15 +154,15 @@
 				</div>
 				<div class="col-md-7">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 mobile-img">
 								<img src="<?php echo $downstairs2['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
-					<div class="row top-buffer">
-						<div class="col-md-6 padRight5">
+					<div class="row top-buffer mobile-img">
+						<div class="col-md-6 padRight5 mobile-img">
 								<img src="<?php echo $downstairs4['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
-						<div class="col-md-6 padLeft5">
+						<div class="col-md-6 padLeft5 mobile-img">
 								<img src="<?php echo $downstairs5['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
 					</div>
@@ -184,7 +184,7 @@
 
 	<div id="rates" class="room">
 
-		<div class="center-block" style="background-image: url(<?php echo $rates['sizes']['large']; ?>)">
+		<div class="center-block" style="background: url(<?php echo $rates['sizes']['large']; ?>)">
 			<div class="center-info">
 				<div id="rates-acf" class="container-fluid">
 					<div class=""><?php the_field('rates'); ?></div>
@@ -227,7 +227,7 @@
 	</div>
 
 	<div id="clients" class="container-fluid">
-		<div class="center-block" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
+		<div class="center-block" style="background: url(<?php echo $clients['sizes']['large']; ?>)">
 		</div>
 
 		<div class="client-box col-md-8 col-md-offset-2">
