@@ -26,7 +26,7 @@
 		$clients = get_field('client_media');
 	?>
 
-	<div id="hero" class="room container-fluid">
+	<div id="hero" class="room container">
 		<div class="row-fluid">
 			<div id="big-brand" class="center-block" style="background-image: url(<?php echo $hero['sizes']['large']; ?>)">
 				<div id="big-logo">
@@ -42,7 +42,7 @@
 		</div>
 	</div>
 
-	<div id="upstairs" class="room container-fluid">
+	<div id="upstairs" class="room container">
 		<div class="row-fluid">
 			<div class="center-block" style="background-image: url(<?php echo $upstairs['sizes']['large']; ?>)">
 				<div class="center-info">
@@ -115,7 +115,7 @@
 
 	</div>
 
-	<div id="downstairs" class="room container-fluid">
+	<div id="downstairs" class="room container">
 		<div class="row-fluid">
 		
 			<div class="center-block" style="background-image: url(<?php echo $downstairs['sizes']['large']; ?>)">
@@ -193,7 +193,7 @@
 
 		<div class="center-block" style="background-image: url(<?php echo $rates['sizes']['large']; ?>)">
 			<div class="center-info">
-				<div id="rates-acf" class="container-fluid">
+				<div id="rates-acf" class="container">
 					<div class="row-fluid">
 						<?php the_field('rates'); ?>
 						</div>
@@ -235,7 +235,7 @@
 		</div>
 	</div>
 
-	<div id="clients" class="container-fluid">
+	<div id="clients" class="container">
 		<div class="row-fluid">
 			<div class="center-block" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
 			</div>
@@ -259,7 +259,7 @@
 						<!-- #primary-sidebar -->
 					<?php endif; ?>
 					
-					<ul class="container-fluid">
+					<ul class="container">
 						<?php
 						
 						

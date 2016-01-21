@@ -28,4 +28,4 @@
 	</head>
 	<body data-spy="scroll" data-target="#main-nav" data-offset="100" <?php body_class(); ?>>
 
-		<div id="global-container">
+		<div id="global-container" class="container">
