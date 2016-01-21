@@ -26,33 +26,29 @@
 		$clients = get_field('client_media');
 	?>
 
-	<div id="hero" class="room container">
-		<div class="row-fluid">
-			<div id="big-brand" class="center-block" style="background-image: url(<?php echo $hero['sizes']['large']; ?>)">
-				<div id="big-logo">
-					<img src="<?php the_field('big_logo'); ?>" />
-					<h3>
-						<?php if(get_field('intro_text')) {
-							echo get_field('intro_text');
-						} ?>
-					</h3>
-				</div>
-				<a id="scroll-down" href="#"><i class="fa fa-chevron-down"></i></a>
+	<div id="hero" class="room container-fluid">
+		<div id="big-brand" class="center-block" style="background-image: url(<?php echo $hero['sizes']['large']; ?>)">
+			<div id="big-logo">
+				<img src="<?php the_field('big_logo'); ?>" />
+				<h3>
+					<?php if(get_field('intro_text')) {
+						echo get_field('intro_text');
+					} ?>
+				</h3>
 			</div>
+			<a id="scroll-down" href="#"><i class="fa fa-chevron-down"></i></a>
 		</div>
 	</div>
 
-	<div id="upstairs" class="room container">
-		<div class="row-fluid">
-			<div class="center-block" style="background-image: url(<?php echo $upstairs['sizes']['large']; ?>)">
-				<div class="center-info">
-					<div id="upstairs-title">
-						<h2><?php if(get_field('upstairs')) {
-							echo get_field('upstairs');
-						} ?></h2>
-					</div>
-				</div>		
-			</div>
+	<div id="upstairs" class="room container-fluid">
+		<div class="center-block" style="background-image: url(<?php echo $upstairs['sizes']['large']; ?>)">
+			<div class="center-info">
+				<div id="upstairs-title">
+					<h2><?php if(get_field('upstairs')) {
+						echo get_field('upstairs');
+					} ?></h2>
+				</div>
+			</div>		
 		</div>
 	</div>
 
@@ -70,7 +66,7 @@
 
 		<hr class="marVert40">
 
-		<div class="row-fluid">
+		<div class="row">
 			<div class="col-md-12">
 				<div class="col-md-7">
 					<?php 
@@ -80,7 +76,7 @@
 						$upstairs4 = get_field('upstairs_media_4');
 						$upstairs5 = get_field('upstairs_media_5');
 					?>
-					<div class="row-fluid">
+					<div class="row">
 						<div class="col-md-6 padRight5">
 								<img src="<?php echo $upstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
@@ -95,7 +91,7 @@
 					</div>
 				</div>
 				<div class="col-md-5">
-						<div class="row-fluid"><img src="<?php echo $upstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+						<div class="row"><img src="<?php echo $upstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 
 						<div class="row top-buffer"><img src="<?php echo $upstairs5['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 				</div>
@@ -115,19 +111,16 @@
 
 	</div>
 
-	<div id="downstairs" class="room container">
-		<div class="row-fluid">
+	<div id="downstairs" class="room container-fluid">
 		
-			<div class="center-block" style="background-image: url(<?php echo $downstairs['sizes']['large']; ?>)">
-				<div class="center-info">
-					<div id="downstairs-title">
-						<h2><?php if(get_field('downstairs')) {
-							echo get_field('downstairs');
-						} ?></h2>
-					</div>
+		<div class="center-block" style="background-image: url(<?php echo $downstairs['sizes']['large']; ?>)">
+			<div class="center-info">
+				<div id="downstairs-title">
+					<h2><?php if(get_field('downstairs')) {
+						echo get_field('downstairs');
+					} ?></h2>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
@@ -145,7 +138,7 @@
 
 		<hr class="marVert40">
 
-		<div class="row-fluid">
+		<div class="row">
 			<div class="col-md-12">
 				<div class="col-md-5">
 					<?php
@@ -155,12 +148,12 @@
 						$downstairs4 = get_field('downstairs_media_4');
 						$downstairs5 = get_field('downstairs_media_5');
 					?>
-						<div class="row-fluid"><img src="<?php echo $downstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
+						<div class="row"><img src="<?php echo $downstairs1['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 
 						<div class="row top-buffer"><img src="<?php echo $downstairs3['sizes']['medium']; ?>" width="<?php echo $image['sizes']['large-width']; ?>" height="<?php echo $image['sizes']['large-height']; ?>" alt="<?php echo $image['caption']; ?>" /></div>
 				</div>
 				<div class="col-md-7">
-					<div class="row-fluid">
+					<div class="row">
 						<div class="col-md-12">
 								<img src="<?php echo $downstairs2['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 						</div>
@@ -193,10 +186,8 @@
 
 		<div class="center-block" style="background-image: url(<?php echo $rates['sizes']['large']; ?>)">
 			<div class="center-info">
-				<div id="rates-acf" class="container">
-					<div class="row-fluid">
-						<?php the_field('rates'); ?>
-						</div>
+				<div id="rates-acf" class="container-fluid">
+					<div class=""><?php the_field('rates'); ?></div>
 				</div>
 			</div>
 		</div>
@@ -205,7 +196,7 @@
 
 	<div id="gear" class="room">
 		<div id="gear-acf" class="container">
-			<div class="row-fluid">
+			<div class="row">
 				<h2><?php the_field('gear_title'); ?></h2>
 				<div class="g-col1 col-md-4">
 					<h3><?php the_field('g-column1-title'); ?></h3>
@@ -235,57 +226,53 @@
 		</div>
 	</div>
 
-	<div id="clients" class="container">
-		<div class="row-fluid">
-			<div class="center-block" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
-			</div>
+	<div id="clients" class="container-fluid">
+		<div class="center-block" style="background-image: url(<?php echo $clients['sizes']['large']; ?>)">
+		</div>
 
-			<div class="client-box col-md-8 col-md-offset-2">
-				<?php the_field('clients'); ?>
-			</div>
+		<div class="client-box col-md-8 col-md-offset-2">
+			<?php the_field('clients'); ?>
 		</div>
 	</div>
 
 	<div id="about" class="room scroll">
 		<div id="about-acf"  class="container">
-			<div class="row-fluid">
-				<div class="col-md-8 col-md-offset-2">
-					<?php the_field('about'); ?>
+			<div class="col-md-8 col-md-offset-2">
+				<?php the_field('about'); ?>
+				
+				<?php if ( is_active_sidebar( 'personnel' ) ) : ?>
+					<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+						<?php dynamic_sidebar( 'personnel' ); ?>
+					</div>
+					<!-- #primary-sidebar -->
+				<?php endif; ?>
+				
+				<ul class="container-fluid">
+					<?php
 					
-					<?php if ( is_active_sidebar( 'personnel' ) ) : ?>
-						<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-							<?php dynamic_sidebar( 'personnel' ); ?>
-						</div>
-						<!-- #primary-sidebar -->
-					<?php endif; ?>
 					
-					<ul class="container">
-						<?php
-						
-						
-						$args = array( 'posts_per_page' => 15, 'category_name' => 'people', 'order' => 'DESC' );
-						
-						$myposts = get_posts( $args );
-						foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-							<li class="row-fluid">
-								<div class="col-sm-5">
-									<?php the_post_thumbnail('medium',''); ?>
-								</div>
-								<div class="col-sm-7 text-left">
-									<h3><?php the_title(); ?></h3>
-									<p><?php the_content(); ?></p>
-									<ul class="list-inline">
-										<?php if(get_field('link1')) : ?>
-											<li><a class="btn btn-default" href="<?php echo get_field('link1'); ?>">More Info</a></li>
-										<?php endif; ?>
-									</ul>
-								</div>
-							</li>
-						<?php endforeach; 
-						wp_reset_postdata();?>
+					$args = array( 'posts_per_page' => 15, 'category_name' => 'people', 'order' => 'DESC' );
 					
-					</ul>
-				</div>
+					$myposts = get_posts( $args );
+					foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+						<li class="row">
+							<div class="col-sm-5">
+								<?php the_post_thumbnail('medium',''); ?>
+							</div>
+							<div class="col-sm-7 text-left">
+								<h3><?php the_title(); ?></h3>
+								<p><?php the_content(); ?></p>
+								<ul class="list-inline">
+									<?php if(get_field('link1')) : ?>
+										<li><a class="btn btn-default" href="<?php echo get_field('link1'); ?>">More Info</a></li>
+									<?php endif; ?>
+								</ul>
+							</div>
+						</li>
+					<?php endforeach; 
+					wp_reset_postdata();?>
+				
+				</ul>
 			</div>
 		</div>
 
@@ -293,13 +280,11 @@
 
 		<div class="room-info row-fluid padVert40" id="about-call">
 			<div class="container">
-				<div class="row-fluid">
-					<div class="col-sm-6 col-sm-offset-2 text-right">
-						<h4><?php the_field('call-to-action'); ?></h4>
-					</div>
-					<div class="col-sm-2">
-						<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
-					</div>
+				<div class="col-sm-6 col-sm-offset-2 text-right">
+					<h4><?php the_field('call-to-action'); ?></h4>
+				</div>
+				<div class="col-sm-2">
+					<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
 		</div>
