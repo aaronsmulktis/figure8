@@ -1,7 +1,7 @@
 <header>
-	<div class="container-fluid">
+	<div class="container">
 		<nav id="main-nav" class="navbar navbar-default navbar-fixed-top shift" role="navigation">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="navbar-header nomargin">
 					<div id="mob-brand" class="navbar-brand pull-left visible-xs">
 						<a class="logo" href="#content"><span>((8))</span></a>
