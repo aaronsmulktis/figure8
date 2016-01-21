@@ -24,7 +24,7 @@
 						<li><a href="#clients">Clients</a></li>
 						<li><a href="#about">About</a></li>
 					</ul>
-					<form class="navbar-form navbar-left pull-right hidden-xs" action="//figure8recording.us11.list-manage.com/subscribe/post?u=2e0b9d52e641ba05b474de15d&amp;id=11a016f12e" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<form class="navbar-form navbar-left pull-right hidden-xs hidden-sm" action="//figure8recording.us11.list-manage.com/subscribe/post?u=2e0b9d52e641ba05b474de15d&amp;id=11a016f12e" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div class="form-group">
 							<input type="email" class="form-control" placeholder="Keep In Touch!" value="" name="EMAIL" id="mce-EMAIL">
 						</div>
