@@ -135,6 +135,9 @@ div.btn-default:hover {
   background: #9a3333;
   color: #ffffff;
 }
+.shadow {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
 body,
 input,
 textarea {
@@ -591,7 +594,7 @@ div.csColumn {
   background: white;
   padding: 10px;
   /*border-radius: 3px;*/
-  box-shadow: 1px 1px 3px rgba(150, 40, 80, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
   margin: 30px 0px;
 }
@@ -599,7 +602,7 @@ div.csColumn {
   background: #e1e1e1;
   padding: 10px;
   /*border-radius: 3px;*/
-  box-shadow: 1px 1px 3px rgba(150, 40, 80, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
   margin: 30px 0px;
 }
@@ -607,7 +610,7 @@ div.csColumn {
   background: #d5d5d5;
   padding: 10px;
   /*border-radius: 3px;*/
-  box-shadow: 1px 1px 3px rgba(150, 40, 80, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
   margin: 30px 0px;
 }
