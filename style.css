@@ -310,6 +310,9 @@ header {
   left: 10px;
   position: relative;
 }
+#mob-brand a {
+  display: block;
+}
 #mob-brand a.logo span {
   visibility: hidden;
 }
