@@ -678,11 +678,6 @@ footer {
     text-align: center;
     color: white;
   }
-  #clients .client-box {
-    width: 420px;
-    margin-left: -210px;
-    position: relative;
-  }
 }
 /* 480 and up */
 @media screen and (min-width: 480px) {
