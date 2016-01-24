@@ -678,15 +678,24 @@ footer {
     text-align: center;
     color: white;
   }
+  #clients .client-box {
+    width: 420px;
+    margin-left: -210px;
+  }
 }
-/* 400 and up */
-@media screen and (min-width: 400px) {
+/* 480 and up */
+@media screen and (min-width: 480px) {
   body {
-    /* Place your styles here for all widths greater than 400px */
     text-align: center;
   }
   div.csColumn {
     text-align: left !important;
+  }
+  #clients .client-box {
+    left: 50%;
+    position: relative;
+    width: 800px;
+    margin-left: -400px;
   }
 }
 /* RETINA STUFF */
