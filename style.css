@@ -687,6 +687,8 @@ footer {
   div.csColumn {
     text-align: left !important;
   }
+}
+@media screen and (min-width: 797px) {
   #clients .client-box {
     left: 50%;
     position: relative;
