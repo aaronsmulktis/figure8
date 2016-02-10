@@ -100,10 +100,10 @@
 
 		<div class="room-info row padVert40" id="upstairs-call">
 			<div class="container">
-				<div class="col-sm-6 col-sm-offset-1 text-right">
+				<div class="col-xs-6 col-xs-offset-1 text-right">
 					<h4><?php the_field('call-to-action'); ?></h4>
 				</div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 					<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
@@ -172,10 +172,10 @@
 
 		<div class="room-info row padVert40" id="downstairs-call">
 			<div class="container">
-				<div class="col-sm-6 col-sm-offset-1 text-right">
+				<div class="col-xs-6 col-xs-offset-1 text-right">
 					<h4><?php the_field('call-to-action'); ?></h4>
 				</div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 					<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
@@ -283,10 +283,10 @@
 
 		<div class="room-info row-fluid padVert40" id="about-call">
 			<div class="container">
-				<div class="col-sm-6 col-sm-offset-1 text-right">
+				<div class="col-xs-6 col-xs-offset-1 text-right">
 					<h4><?php the_field('call-to-action'); ?></h4>
 				</div>
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 					<a href="mailto:michael@figure8recording.com" class="btn btn-default">Email Us</a>
 				</div>
 			</div>
