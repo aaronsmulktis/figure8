@@ -664,6 +664,9 @@ footer {
   .navbar-default .navbar-form {
     padding: 0;
   }
+  .nav > li {
+    text-align: right;
+  }
   .csColumn {
     text-align: center !important;
   }
@@ -677,6 +680,10 @@ footer {
     width: auto;
     text-align: center;
     color: white;
+  }
+  .center-block {
+    background: rgba(0, 0, 0, 0.66);
+    transform: scale(0.85);
   }
 }
 /* 480 and up */

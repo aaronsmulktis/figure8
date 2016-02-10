@@ -1,20 +1,22 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
+
+    "use strict";
 
     var body = $('html, body');
 
-	var $window = $(window),
-    $html = $('html');
+    var $window = $(window),
+        $html = $('html');
 
-	$('body').scrollspy({ target: '#main-nav' });
+	body.scrollspy({ target: '#main-nav' });
 
 	$('.navbar-nav>li>a').smoothScroll({
 		speed: 666,
-		// offset: -50,
+		offset: 50,
 		easing: 'swing',
 		preventDefault: true
 	});
 
-	$(window).scroll(function() {
+	$(window).scroll(function () {
 		if ($(document).scrollTop() > 50) {
 			$('.navbar-default').removeClass('shift');
 		} else {
@@ -22,7 +24,7 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-    // $('#scroll-down').click(function(e){
+    // $('#scroll-down').click(function (e){
     //     e.preventDefault();
     //     body.animate({scrollTop:640}, '2500', 'swing');
     // });
@@ -35,6 +37,16 @@ jQuery(document).ready(function($) {
         preventDefault: true
     });
 
+    function isTouchDevice() {
+        return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+    }
+
+    $('.navbar-nav>li>a').on('click', function () {
+        if (isTouchDevice()) {
+            $('.navbar-toggle').click();
+        }
+    });
+
     // iPhone scroll handler
     // ---------------------
     //
@@ -42,7 +54,7 @@ jQuery(document).ready(function($) {
     // last section depending on where the page is scrolled
     // to, in order to make it scroll or stay fixed.
     //
-    (function() {
+    (function () {
         var $sections = $('.center-block'),
             $firstSection = $sections.first(),
             $lastSection = $sections.last(),
@@ -55,10 +67,10 @@ jQuery(document).ready(function($) {
 
         // use an indirect approach to updating the trigger positions
         // this way we don't over do it with event handlers
-        $window.on('resize load orientationchange', function() {
+        $window.on('resize load orientationchange', function () {
             resized = true;
         });
-        // $('.ringly-item img').on('load', function() {
+        // $('.ringly-item img').on('load', function () {
         //     resized = true;
         // });
 
@@ -72,7 +84,7 @@ jQuery(document).ready(function($) {
 
                 // delay in case the above trigger causes other page
                 // changes!
-                window.setTimeout(function() {
+                window.setTimeout(function () {
                     scrollTriggerYMax = $lastSection.offset().top;
                     scrollTriggerYMin = $firstSection.offset().top;
                     $window.trigger('scroll');
@@ -84,7 +96,7 @@ jQuery(document).ready(function($) {
         window.setInterval(updateYTriggers, 200);
 
         // when page has scrolled see if we hit the scroll target
-        $window.on('scroll', function() {
+        $window.on('scroll', function () {
             var updateMin = false,
                 updateMax = false,
                 scrollY = $window.scrollTop();
@@ -137,15 +149,15 @@ jQuery(document).ready(function($) {
 
     })();
 
-    $window.load(function() {
-        $('[data-deferclass]').each(function() {
+    $window.load(function () {
+        $('[data-deferclass]').each(function () {
             var $this = $(this),
                 className = $this.data('deferclass');
             $this.addClass(className);
         });
     });
 
-    $('form.navbar-form div#mce-responses').on('click', function() {
+    $('form.navbar-form div#mce-responses').on('click', function () {
         $(this).hide(1000);
     });
 

@@ -19,8 +19,8 @@
 						<li class="hidden-xs"><a class="logo" href="#global-container"><span>((8))</span></a></li>
 						<li><a href="#upstairs">Upstairs</a></li>
 						<li><a href="#downstairs">Downstairs</a></li>
-						<li><a href="#gear">Equipment</a></li>
 						<li><a href="#rates">Rates</a></li>
+						<li><a href="#gear">Equipment</a></li>
 						<li><a href="#clients">Clients</a></li>
 						<li><a href="#about">About</a></li>
 					</ul>
