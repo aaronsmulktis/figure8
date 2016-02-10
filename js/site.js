@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
 
     $('#scroll-down').smoothScroll({
         speed: 666,
-        // offset: -50,
+        offset: 50,
         scrollTarget: '#upstairs',
         easing: 'swing',
         preventDefault: true
