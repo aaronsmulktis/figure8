@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
 
 	$('.navbar-nav>li>a').smoothScroll({
 		speed: 666,
-		offset: 50,
+		offset: -50,
 		easing: 'swing',
 		preventDefault: true
 	});
@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
 
     $('#scroll-down').smoothScroll({
         speed: 666,
-        offset: 50,
+        offset: -50,
         scrollTarget: '#upstairs',
         easing: 'swing',
         preventDefault: true
