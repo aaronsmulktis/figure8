@@ -683,6 +683,7 @@ footer {
   }
   .center-info {
     background: rgba(0, 0, 0, 0.66);
+    background-attachment: scroll !important;
   }
 }
 /* 480 and up */
@@ -703,8 +704,3 @@ footer {
   }
 }
 /* RETINA STUFF */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  .center-block {
-    background-attachment: scroll !important;
-  }
-}
