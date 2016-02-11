@@ -641,10 +641,10 @@ footer {
   #clients .center-block {
     /*position: static;*/
   }
-  .mobile-img {
-    padding: 0 !important;
-    margin: 10px 0 !important;
-  }
+  /*.mobile-img {
+		padding: 0 !important;
+		margin: 10px 0 !important;
+	}*/
 }
 /* Tiny devices (phones, etc) */
 @media screen and (max-width: 480px) {
