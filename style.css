@@ -641,10 +641,6 @@ footer {
   #clients .center-block {
     /*position: static;*/
   }
-  /*.mobile-img {
-		padding: 0 !important;
-		margin: 10px 0 !important;
-	}*/
 }
 /* Tiny devices (phones, etc) */
 @media screen and (max-width: 480px) {
@@ -680,6 +676,10 @@ footer {
     width: auto;
     text-align: center;
     color: white;
+  }
+  .mobile-img {
+    padding: 0 !important;
+    margin: 10px 0 !important;
   }
   .center-info {
     background: rgba(0, 0, 0, 0.66);
