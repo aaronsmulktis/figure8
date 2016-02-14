@@ -29,13 +29,13 @@ jQuery(document).ready(function ($) {
     //     body.animate({scrollTop:640}, '2500', 'swing');
     // });
     
-    $('a#logo').smoothScroll({
-        speed: 666,
-        offset: -1000,
-        scrollTarget: '#upstairs',
-        easing: 'swing',
-        preventDefault: true
-    });
+    // $('a#logo').smoothScroll({
+    //     speed: 666,
+    //     offset: -1000,
+    //     scrollTarget: '#upstairs',
+    //     easing: 'swing',
+    //     preventDefault: true
+    // });
 
     $('#scroll-down').smoothScroll({
         speed: 666,
