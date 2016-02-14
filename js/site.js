@@ -32,7 +32,8 @@ jQuery(document).ready(function ($) {
     $('a#logo').smoothScroll({
         speed: 666,
         offset: 0,
-        scrollTarget: '#global-container',
+        direction: 'top',
+        scrollTarget: null,
         easing: 'swing',
         preventDefault: true
     });
