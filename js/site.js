@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
     
     $('a#logo').smoothScroll({
         speed: 666,
-        offset: -100vh,
+        offset: -100%,
         scrollTarget: '#upstairs',
         easing: 'swing',
         preventDefault: true
