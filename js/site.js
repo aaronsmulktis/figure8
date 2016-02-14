@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
     //     body.animate({scrollTop:640}, '2500', 'swing');
     // });
     
-    $('#logo').smoothScroll({
+    $('a.logo').smoothScroll({
         speed: 666,
         offset: -40,
         scrollTarget: '#hero',
