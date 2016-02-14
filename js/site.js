@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
 
 	$('.navbar-nav>li>a').smoothScroll({
 		speed: 666,
-		offset: -10,
+		offset: 10,
 		easing: 'swing',
 		preventDefault: true
 	});
