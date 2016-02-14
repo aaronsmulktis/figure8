@@ -355,10 +355,10 @@ header {
   border-radius: 50% !important;
   padding: 7px 12px 5px 12px !important;
 }
-#main-nav ul li:first-child span {
+#main-nav a#logo span {
   display: none;
 }
-#main-nav ul li:first-child,
+#main-nav a#logo,
 #mob-brand {
   background: url(images/icon.gif) no-repeat;
   background-size: contain;
@@ -366,11 +366,11 @@ header {
   padding: 10px 5px;
   margin: 0 10px;
 }
-.navbar-default .navbar-nav > .active > a.logo {
-  background: transparent !important;
-  background-image: none;
-  box-shadow: none !important;
-}
+/*.navbar-default .navbar-nav > .active > a.logo {
+	background: transparent !important;
+	background-image: none;
+	box-shadow: none !important;
+}*/
 form.navbar-form div#mce-responses {
   position: absolute !important;
   right: 0;
