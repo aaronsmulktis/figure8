@@ -28,6 +28,9 @@ jQuery(document).ready(function ($) {
     //     e.preventDefault();
     //     body.animate({scrollTop:640}, '2500', 'swing');
     // });
+    $('a#logo').click(function() {
+        $('html, body').animate({scrollTop:0}, 'slow'); return false});
+    })
 
     $('#scroll-down').smoothScroll({
         speed: 666,
