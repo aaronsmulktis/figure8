@@ -29,8 +29,12 @@ jQuery(document).ready(function ($) {
     //     body.animate({scrollTop:640}, '2500', 'swing');
     // });
     
-    $('a#logo').click(function() {
-        $('html, body').animate({scrollTop:0}, 'slow'); return false});
+    $('a#logo').smoothScroll({
+        speed: 666,
+        offset: 0,
+        scrollTarget: 0,
+        easing: 'swing',
+        preventDefault: true
     });
 
     $('#scroll-down').smoothScroll({
