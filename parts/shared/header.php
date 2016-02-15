@@ -16,7 +16,7 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav" role="tablist">
-						<li class="hidden-xs"><a class="logo" href="javascript:;"><span>((8))</span></a></li>
+						<li class="active hidden-xs"><a class="logo" href="javascript:;"><span>((8))</span></a></li>
 						<li><a href="#upstairs">Upstairs</a></li>
 						<li><a href="#downstairs">Downstairs</a></li>
 						<li><a href="#rates">Rates</a></li>
