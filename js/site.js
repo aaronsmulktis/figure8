@@ -5,11 +5,22 @@ jQuery(document).ready(function ($) {
     var body = $('html, body');
 
     var $window = $(window),
-        $html = $('html');
+        $html = $('html'),
+        userAgent = window.navigator.userAgent;
 
     function isTouchDevice() {
         return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
     }
+
+    $(function() {
+        if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+            $html.animate({scrollTop:10}, '2000', 'swing');
+            return false;
+        }
+        else {
+            return false;
+        }
+    });
 
     $(function() {
         if (isTouchDevice()===true) {
