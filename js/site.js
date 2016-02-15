@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    body.scrollspy({ target: '#content' });
+    body.scrollspy({ target: '.navbar' });
 
 	$('.navbar-nav>li>a').smoothScroll({
 		speed: 666,
