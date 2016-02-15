@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
     }
 
     $(function() {
-        if (isTouchDevice==true) {
+        if (isTouchDevice()===true) {
             $('html, body').addClass('touch');
         }
     });
