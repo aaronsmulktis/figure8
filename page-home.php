@@ -29,7 +29,7 @@
 	<div id="hero" class="room container-fluid">
 		<div id="big-brand" class="center-block" style="background: url(<?php echo $hero['sizes']['large']; ?>)">
 			<div id="big-logo">
-				<img src="images/figure8-logo-white.svg" />
+				<img src="<?php echo get_template_directory(); ?>/images/figure8-logo-white.svg" />
 				<h3>
 					<?php if(get_field('intro_text')) {
 						echo get_field('intro_text');
