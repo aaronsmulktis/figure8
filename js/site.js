@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
 
 	body.scrollspy({ target: '#main-nav' });
 
-	$('.navbar-nav>li>a').smoothScroll({
+	$('#content').smoothScroll({
 		speed: 666,
 		offset: 0,
 		easing: 'swing',
