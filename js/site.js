@@ -7,6 +7,16 @@ jQuery(document).ready(function ($) {
     var $window = $(window),
         $html = $('html');
 
+    function isTouchDevice() {
+        return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+    }
+
+    $(function() {
+        if (isTouchDevice==true) {
+            $('html, body').addClass('touch');
+        }
+    });
+
 	body.scrollspy({ target: '#main-nav' });
 
 	$('#global-container').smoothScroll({
