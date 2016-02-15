@@ -14,11 +14,12 @@ jQuery(document).ready(function ($) {
 
     $(function() {
         if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-            $html.animate({scrollTop:10}, '2000', 'swing');
-            return false;
+            setTimeout(function() {
+                $html.animate({scrollTop:10}, '2000', 'swing');
+            }, 100);
         }
         else {
-            return false;
+            return;
         }
     });
 
