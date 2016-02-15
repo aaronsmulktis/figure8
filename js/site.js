@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
     $(function() {
         if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
             setTimeout(function() {
-                $html.animate({scrollTop:10}, '2000', 'swing');
+                body.animate({scrollTop:10}, '2000', 'swing');
             }, 100);
         }
         else {
@@ -29,9 +29,9 @@ jQuery(document).ready(function ($) {
         }
     });
 
-	body.scrollspy({ target: '#main-nav' });
+    body.scrollspy({ target: '#content' });
 
-	$('#global-container').smoothScroll({
+	$('.navbar-nav>li>a').smoothScroll({
 		speed: 666,
 		offset: 0,
 		easing: 'swing',
