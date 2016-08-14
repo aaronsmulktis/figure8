@@ -10,29 +10,29 @@
 	 */
 
 	/* ========================================================================================================================
-	
+
 	Required external files
-	
+
 	======================================================================================================================== */
 
 	require_once( 'external/starkers-utilities.php' );
 
 	/* ========================================================================================================================
-	
+
 	Theme specific settings
 
 	Uncomment register_nav_menus to enable a single menu with the title of "Primary Navigation" in your theme
-	
+
 	======================================================================================================================== */
-	
+
 	add_theme_support('post-thumbnails');
-	
+
 	// register_nav_menus(array('primary' => 'Primary Navigation'));
 
 	/* ========================================================================================================================
-	
+
 	Actions and Filters
-	
+
 	======================================================================================================================== */
 
 	add_action( 'wp_enqueue_scripts', 'starkers_script_enqueuer' );
@@ -40,19 +40,19 @@
 	add_filter( 'body_class', array( 'Starkers_Utilities', 'add_slug_to_body_class' ) );
 
 	/* ========================================================================================================================
-	
+
 	Custom Post Types - include custom post types and taxonimies here e.g.
 
 	e.g. require_once( 'custom-post-types/your-custom-post-type.php' );
-	
+
 	======================================================================================================================== */
 
 
 
 	/* ========================================================================================================================
-	
+
 	Scripts
-	
+
 	======================================================================================================================== */
 
 	/**
@@ -87,30 +87,30 @@
 
 		wp_register_script( 'parallax', get_template_directory_uri().'/js/parallax.js', array( 'jquery' ) );
 		wp_enqueue_script( 'parallax' );
-		
+
 		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
 		wp_enqueue_script( 'site' );
 
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
-	}	
+	}
 
 	/* ========================================================================================================================
-	
+
 	Comments
-	
+
 	======================================================================================================================== */
 
 	/**
-	 * Custom callback for outputting comments 
+	 * Custom callback for outputting comments
 	 *
 	 * @return void
 	 * @author Keir Whitaker
 	 */
 	function starkers_comment( $comment, $args, $depth ) {
-		$GLOBALS['comment'] = $comment; 
+		$GLOBALS['comment'] = $comment;
 		?>
-		<?php if ( $comment->comment_approved == '1' ): ?>	
+		<?php if ( $comment->comment_approved == '1' ): ?>
 		<li>
 			<article id="comment-<?php comment_ID() ?>">
 				<?php echo get_avatar( $comment ); ?>
@@ -146,7 +146,7 @@
 	      );
 	      return $skins;
 	}
-	
+
 	// Add Widgets
 	function fig8_widgets_init() {
 
@@ -158,6 +158,27 @@
 			'before_title'  => '<h2 class="rounded">',
 			'after_title'   => '</h2>',
 		) );
-	
+
 	}
 	add_action( 'widgets_init', 'fig8_widgets_init' );
+
+	//Auto add and update Title field:
+	function my_post_title_updater( $post_id ) {
+
+		$my_post = array();
+		$my_post['ID'] = $post_id;
+		$my_post['post_title'] = get_field('kop');
+
+		//Unhook function to prevent infitnite looping
+		remove_filter('acf/save_post', 'my_post_title_updater', 20);
+
+		// Update the post into the database
+		wp_update_post( $my_post );
+
+		//Rehook function to prevent infitnite looping
+		add_filter('acf/save_post', 'my_post_title_updater', 20, 3);
+
+	}
+
+	// run after ACF saves the $_POST['fields'] data
+	add_action('acf/save_post', 'my_post_title_updater', 20);
